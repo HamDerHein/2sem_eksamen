@@ -9,7 +9,48 @@
 </head>
 
 <body>
-    <script></script>
+    <header class="header">
+        <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
+        <nav class="navigation">
+            <a href="projekter.html"><button>Projekter</button></a>
+            <a href="produkter.html"><button>Produkter</button></a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Om</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="om_vaerksted.html" Værksted</a>
+                    <a href="om_butik.html">Butik</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img data-butik_billede src="" alt="" class="om_butikBillede">
+    <article>
+        <p data-butik_tekst></p>
+    </article>
+    <article>
+        <p data_lilleTekst></p>
+        <p data_lilleTekst2></p>
+        <p data_lilleTekst3></p>
+        <p data_lilleTekst4></p>
+    </article>
+    <article>
+        <div class="googleMaps"></div>
+    </article>
+
+
+
+
+
+
+    <footer class="footer">
+        <p data-kontakt></p>
+        <p data-aabningstider></p>
+        <img data-fbLogo src="" alt="" class="fb_logo">
+        <img data-insLogo src="" alt="" class="ins_logo">
+    </footer>
+    <script src="hentJson.js"></script>
+    <script src="dropdown.js"></script>
 </body>
 
 </html>

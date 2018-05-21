@@ -8,8 +8,50 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
+
+
+
+
 <body>
-    <script></script>
+    <header class="header">
+        <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
+        <nav class="navigation">
+            <a href="projekter.html"><button>Projekter</button></a>
+            <a href="produkter.html"><button>Produkter</button></a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Om</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="om_vaerksted.html">Værksted</a>
+                    <a href="om_butik.html">Butik</a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <article>
+        <iframe data-present_video width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </article>
+
+    <article>
+        <p data-projekter_tekst></p>
+    </article>
+    <img data-projekter_billede src="" alt="" class="projekter_billede">
+    <article>
+        <p data-projekter_tekst2></p>
+    </article>
+
+    <footer class="footer">
+        <p data-kontakt></p>
+        <p data-aabningstider></p>
+        <img data-fbLogo src="" alt="" class="fb_logo">
+        <img data-insLogo src="" alt="" class="ins_logo">
+    </footer>
+
+
+    <script src="dropdown.js"></script>
+    <script src="hentJson.js"></script>
 </body>
 
 </html>
