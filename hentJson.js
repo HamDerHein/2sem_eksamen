@@ -76,3 +76,27 @@ async function hentJsonOmButik() {
     document.querySelector("[data_lilleTekst4]").textContent = butik.acf.butik_lilletekst4;
 
 }
+
+document.addEventListener("DOMContentLoaded", hentJsonSpisebord);
+
+async function hentJsonSpisebord() {
+
+    let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/28/");
+    let sofabord = await jsonObjekt.json();
+    document.querySelector("[data-spisebord_billede]").src = sofabord.acf.produktbillede1;
+    document.querySelector("[data-spisebord_beskrivelse]").innerHTML = sofabord.acf.produktTekst1;
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", hentJsonSofabord);
+
+async function hentJsonSofabord() {
+
+    let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/118/");
+    let sofabord = await jsonObjekt.json();
+    document.querySelector("[data-sofabord_billede]").src = sofabord.acf.produktbillede1;
+    document.querySelector("[data-sofabord_beskrivelse]").innerHTML = sofabord.acf.produktTekst1;
+
+}
