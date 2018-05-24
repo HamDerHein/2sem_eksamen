@@ -85,6 +85,12 @@ async function hentJsonSpisebord() {
     let sofabord = await jsonObjekt.json();
     document.querySelector("[data-spisebord_billede]").src = sofabord.acf.produktbillede1;
     document.querySelector("[data-spisebord_beskrivelse]").innerHTML = sofabord.acf.produktTekst1;
+    document.querySelector("[data-spisebord_billede2]").src = sofabord.acf.produktbillede2;
+    document.querySelector("[data-spisebord_beskrivelse2]").innerHTML = sofabord.acf.produktTekst2;
+    document.querySelector("[data-spisebord_billede3]").src = sofabord.acf.produktbillede3;
+    document.querySelector("[data-spisebord_beskrivelse3]").innerHTML = sofabord.acf.produktTekst4;
+    document.querySelector("[data-spisebord_billede4]").src = sofabord.acf.produktbillede4;
+    document.querySelector("[data-spisebord_beskrivelse4]").innerHTML = sofabord.acf.produktTekst4;
 
 }
 
@@ -98,5 +104,24 @@ async function hentJsonSofabord() {
     let sofabord = await jsonObjekt.json();
     document.querySelector("[data-sofabord_billede]").src = sofabord.acf.produktbillede1;
     document.querySelector("[data-sofabord_beskrivelse]").innerHTML = sofabord.acf.produktTekst1;
+    document.querySelector("[data-sofabord_billede2]").src = sofabord.acf.produktbillede2;
+    document.querySelector("[data-sofabord_beskrivelse2]").innerHTML = sofabord.acf.produktTekst2;
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", hentJsonHylder);
+
+async function hentJsonHylder() {
+
+    let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/120/");
+    let hylde = await jsonObjekt.json();
+    document.querySelector("[data-hylde_billede]").src = hylde.acf.produktbillede1;
+    document.querySelector("[data-hylde_beskrivelse]").innerHTML = hylde.acf.produktTekst1;
+    document.querySelector("[data-hylde_billede2]").src = hylde.acf.produktbillede2;
+    document.querySelector("[data-hylde_beskrivelse2]").innerHTML = hylde.acf.produktTekst2;
+    document.querySelector("[data-hylde_billede3]").src = hylde.acf.produktbillede3;
+    document.querySelector("[data-hylde_beskrivelse3]").innerHTML = hylde.acf.produktTekst3;
 
 }

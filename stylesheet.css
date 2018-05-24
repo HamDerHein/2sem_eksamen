@@ -46,3 +46,64 @@
 
 
 /*DROPDOWN MENU SLUT */
+
+/* SOFABORD BORDPLADE SKIFT FARVE START */
+
+.kassewrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+#kasse1,
+#kasse2,
+#kasse3,
+#kasse4,
+#kasse5,
+#kasse6,
+#kasse7,
+#kasse8,
+#kasse9 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#kasse1 {
+    background-color: #F7F4A5;
+}
+
+#kasse2 {
+    background-color: #BC203C;
+}
+
+#kasse3 {
+    background-color: #DF9997;
+}
+
+#kasse4 {
+    background-color: #02063F;
+}
+
+#kasse5 {
+    background-color: #047999;
+}
+
+#kasse6 {
+    background-color: #71A484;
+}
+
+#kasse7 {
+    background-color: #7A7B69;
+}
+
+#kasse8 {
+    background-color: #060606;
+}
+
+#kasse9 {
+    background-color: #C1C1C1;
+}
+
+
+/* SOFABORD BORDPLADE SKIFT FARVE SLUT */
