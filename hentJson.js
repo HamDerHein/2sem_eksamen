@@ -125,3 +125,21 @@ async function hentJsonHylder() {
     document.querySelector("[data-hylde_beskrivelse3]").innerHTML = hylde.acf.produktTekst3;
 
 }
+
+document.addEventListener("DOMContentLoaded", hentJsonDetails);
+
+async function hentJsonDetails() {
+
+    let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/121/");
+    let details = await jsonObjekt.json();
+    document.querySelector("[data-omSpisebord]").textContent = details.acf.details1;
+    document.querySelector("[data-omSpisebord2]").textContent = details.acf.details1;
+    document.querySelector("[data-omSpisebord3]").textContent = details.acf.details1;
+    document.querySelector("[data-omSpisebord4]").textContent = details.acf.details1;
+    document.querySelector("[data-omSofabord]").textContent = details.acf.details2;
+    document.querySelector("[data-omSofabord2]").textContent = details.acf.details2;
+    document.querySelector("[data-farvevalg]").textContent = details.acf.details3;
+    document.querySelector("[data-omHylden]").textContent = details.acf.details4;
+    document.querySelector("[data-omHylden2]").textContent = details.acf.details4;
+    document.querySelector("[data-omHylden3]").textContent = details.acf.details4;
+}

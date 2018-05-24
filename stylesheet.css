@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+}
+
+
+
 /*DROPDOWN MENU START */
 
 .dropbtn {
@@ -107,3 +113,48 @@
 
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
+
+/* FOOTER START */
+
+.footerWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.line {
+    width: 100vw;
+    height: 5px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+
+/* FOOTER SLUT */
+
+@media screen and (min-width:768px) {
+
+    .produkt_billede {
+        width: 60%;
+    }
+
+    .produktWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .produktWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+    }
+
+
+}
+
+@media screen and (min-width:1786px) {}
