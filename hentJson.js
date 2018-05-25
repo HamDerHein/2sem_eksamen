@@ -143,3 +143,23 @@ async function hentJsonDetails() {
     document.querySelector("[data-omHylden2]").textContent = details.acf.details4;
     document.querySelector("[data-omHylden3]").textContent = details.acf.details4;
 }
+
+
+
+document.addEventListener("DOMContentLoaded", hentJsonOverskrift);
+
+async function hentJsonOverskrift() {
+
+    let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/122/");
+    let overskrift = await jsonObjekt.json();
+    document.querySelector("[data-overskriftSpisebord1]").textContent = overskrift.acf.overskrift1;
+    document.querySelector("[data-overskriftSpisebord2]").textContent = overskrift.acf.overskrift2;
+    document.querySelector("[data-overskriftSpisebord3]").textContent = overskrift.acf.overskrift3;
+    document.querySelector("[data-overskriftSpisebord4]").textContent = overskrift.acf.overskrift4;
+    document.querySelector("[data-overskriftSofabord1]").textContent = overskrift.acf.overskrift5;
+    document.querySelector("[data-overskriftSofabord2]").textContent = overskrift.acf.overskrift10;
+    document.querySelector("[data-overskriftSofabord3]").textContent = overskrift.acf.overskrift6;
+    document.querySelector("[data-overskriftHylder1]").textContent = overskrift.acf.overskrift7;
+    document.querySelector("[data-overskriftHylder2]").textContent = overskrift.acf.overskrift8;
+    document.querySelector("[data-overskriftHylder3]").textContent = overskrift.acf.overskrift9;
+}

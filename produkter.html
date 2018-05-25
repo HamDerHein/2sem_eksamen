@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
-        <nav class="navigation">
-            <a href="projekter.html"><button>Projekter</button></a>
-            <a href="produkter.html"><button>Produkter</button></a>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Om</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="om_vaerksted.html">Værksted</a>
-                    <a href="om_butik.html">Butik</a>
+        <div class="headerWrapper">
+            <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
+            <nav class="navigation">
+                <a href="projekter.html"><button>Projekter</button></a>
+                <a href="produkter.html"><button>Produkter</button></a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Om</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="om_vaerksted.html">Værksted</a>
+                        <a href="om_butik.html">Butik</a>
 
+                    </div>
                 </div>
-            </div>
 
-        </nav>
+            </nav>
+        </div>
     </header>
     <!--SPISEBORD START-->
 
@@ -31,13 +34,16 @@
     <section class="produktWrapper">
 
         <article class="spisebord1">
+            <h3 data-overskriftSpisebord1></h3>
             <img data-spisebord_billede src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
             <details closed>
                 <summary data-omSpisebord></summary>
                 <p data-spisebord_beskrivelse></p>
             </details>
         </article>
+
         <article class="spisebord2">
+            <h3 data-overskriftSpisebord2></h3>
             <img data-spisebord_billede2 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
             <details closed>
                 <summary data-omSpisebord2></summary>
@@ -46,13 +52,16 @@
         </article>
 
         <article class="spisebord3">
+            <h3 data-overskriftSpisebord3></h3>
             <img data-spisebord_billede3 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
             <details closed>
                 <summary data-omSpisebord3></summary>
                 <p data-spisebord_beskrivelse3></p>
             </details>
         </article>
+
         <article class="sofabord4">
+            <h3 data-overskriftSpisebord4></h3>
             <img data-spisebord_billede4 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
             <details closed>
                 <summary data-omSpisebord4></summary>
@@ -66,14 +75,18 @@
 
         <!--SOFABORD START-->
 
+
         <article class="sofabord1">
+            <h3 data-overskriftSofabord1></h3>
             <img data-sofabord_billede src="" alt="" class="sofabord_billede produkt_billede" style="width: 100%;">
             <details closed>
                 <summary data-omSofabord></summary>
                 <p data-sofabord_beskrivelse></p>
             </details>
         </article>
+
         <article class="sofabord2">
+            <h3 data-overskriftSofabord2></h3>
             <div id="farveskift"></div>
             <details closed>
                 <summary data-farvevalg></summary>
@@ -92,6 +105,7 @@
             </details>
         </article>
         <article class="sofabord3">
+            <h3 data-overskriftSofabord3></h3>
             <img data-sofabord_billede2 src="" alt="" class="sofabord_billede produkt_billede" style="width: 100%;">
             <details closed>
                 <summary data-omSofabord2></summary>
@@ -104,13 +118,16 @@
         <!--HYLDER START-->
 
 
-        <article class="hylde1"><img data-hylde_billede src="" alt="" class="hylde_billede produkt_billede" style="width: 100%">
+        <article class="hylde1">
+            <h3 data-overskriftHylder1></h3>
+            <img data-hylde_billede src="" alt="" class="hylde_billede produkt_billede" style="width: 100%">
             <details closed>
                 <summary data-omHylden></summary>
                 <p data-hylde_beskrivelse></p>
             </details>
         </article>
         <article class="hylde2">
+            <h3 data-overskriftHylder2></h3>
             <img data-hylde_billede2 src="" alt="" class="hylde_billede2 produkt_billede" style="width: 100%;">
             <details closed>
                 <summary data-omHylden2></summary>
@@ -118,6 +135,7 @@
             </details>
         </article>
         <article class="hylde3">
+            <h3 data-overskriftHylder3></h3>
             <img data-hylde_billede3 src="" alt="" class="hylde_billede2 produkt_billede" style="width: 100%;">
             <details closed>
                 <summary data-omHylden3></summary>
@@ -141,8 +159,8 @@
                 <p data-aabningstider></p>
             </div>
             <div class="someWrapper">
-                <img data-fbLogo src="" alt="" class="fb_logo">
-                <img data-insLogo src="" alt="" class="ins_logo"></div>
+                <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="" alt="" class="fb_logo"></a>
+                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a></div>
         </div>
     </footer>
     <script src="hentJson.js"></script>

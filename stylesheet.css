@@ -3,21 +3,45 @@ body {
 }
 
 
+/*FONTS START */
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.8em;
+}
+
+summary {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+
+/*FONTS START */
 
 /*DROPDOWN MENU START */
 
-.dropbtn {
-    background-color: #3498DB;
+.dropbtn,
+button {
+    background-color: #a1a08a;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
 }
 
 .dropbtn:hover,
-.dropbtn:focus {
-    background-color: #2980B9;
+.dropbtn:focus,
+button:hover,
+button:focus {
+    background-color: #1e3f59;
 }
 
 .dropdown {
@@ -114,6 +138,20 @@ body {
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
 
+/* HEADER START */
+
+.headerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+.navigation {
+    margin-top: 5vh;
+}
+
+/* HEADET SLUT */
+
 /* FOOTER START */
 
 .footerWrapper {
@@ -129,8 +167,39 @@ body {
     margin: 20px 0;
 }
 
+.someWrapper {
+    margin-left: 30%;
+}
+
+.fb_logo,
+.ins_logo {
+    width: 70%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.kontaktWrapper {
+    margin-left: 20px;
+}
+
 
 /* FOOTER SLUT */
+
+/* FORSIDE START */
+
+.w3-display-container {
+    width: 100vw;
+}
+
+.mySlides {
+    width: 100vw;
+}
+
+
+
+
+
+/* FORSIDE START */
 
 @media screen and (min-width:768px) {
 
@@ -144,6 +213,22 @@ body {
         grid-gap: 10px;
     }
 
+    .fb_logo,
+    .ins_logo {
+        width: 25%;
+        margin: 15px 20px;
+        cursor: pointer;
+    }
+    .someWrapper {
+        margin-left: 5%;
+        margin-top: 40px;
+
+    }
+    .navigation {
+        margin-left: 50%
+    }
+
+
 }
 
 @media screen and (min-width:1024px) {
@@ -153,6 +238,19 @@ body {
         grid-gap: 10px;
 
     }
+
+    .fb_logo,
+    .ins_logo {
+        width: 20%;
+        margin: 15px 20px;
+        cursor: pointer;
+    }
+
+    .someWrapper {
+        margin-left: 60%;
+    }
+
+
 
 
 }
