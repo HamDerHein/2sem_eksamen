@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        #googleMaps {
+            height: 400px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,7 +50,8 @@
         <p data_lilleTekst4></p>
     </article>
     <article>
-        <div class="googleMaps"></div>
+        <div id="googleMaps"></div>
+
     </article>
 
     <footer class="footer">
@@ -63,6 +72,8 @@
     <script src="hentJsonButik.js"></script>
     <script src="dropdown.js"></script>
     <script src="hentJsonFootHead.js"></script>
+    <script src="location.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
 </body>
 
 </html>
