@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #f1f1f1;
 }
 
 
@@ -28,19 +29,21 @@ summary {
 /*DROPDOWN MENU START */
 
 .dropbtn,
-button {
-    background-color: #a1a08a;
+.menu {
+    background-color: #dab693;
     color: white;
-    padding: 8px;
+    padding: 8px 4px;
     font-size: 14px;
     border: none;
     cursor: pointer;
+    width: 80px;
+    margin: 0 -3px;
 }
 
 .dropbtn:hover,
 .dropbtn:focus,
-button:hover,
-button:focus {
+.menu:hover,
+.menu:focus {
     background-color: #1e3f59;
 }
 
@@ -52,11 +55,17 @@ button:focus {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color: #dab693;
+    max-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin-left: -3px;
+    width: 75px;
+}
+
+.dropdown-content a {
+    margin-left: -10px;
 }
 
 .dropdown-content a {
@@ -135,6 +144,11 @@ button:focus {
     background-color: #C1C1C1;
 }
 
+#farveskift {
+    width: 50%;
+}
+
+
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
 
@@ -142,12 +156,15 @@ button:focus {
 
 .headerWrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap: 10px;
 }
 
 .navigation {
-    margin-top: 5vh;
+    margin: auto 0;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 /* HEADET SLUT */
@@ -158,6 +175,8 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
+
 }
 
 .line {
@@ -195,11 +214,116 @@ button:focus {
     width: 100vw;
 }
 
+.slogan {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.slogan h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+
+}
 
 
 
 
-/* FORSIDE START */
+/* FORSIDE SLUT */
+
+/* PROJEKTER START */
+
+.tekstProjekter {
+
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.presentVideo {
+    width: 80vw;
+    height: 30vh;
+    margin: 0 10vw;
+}
+
+.projekter_billede {
+
+    width: 90vw;
+    margin: 5px 5vw;
+}
+
+
+
+/* PROJEKTER SLUT */
+
+/* OM VÆRKSTED START */
+
+.vrVideo {
+    width: 80vw;
+    height: 30vh;
+    margin: 0 10vw;
+}
+
+.omVaerstedTekst {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+.bestillingsmenu {
+    width: 60vw;
+    margin: 5px auto;
+    display: grid;
+    grid-template-rows: 2fr;
+}
+
+.formular_send {
+    margin-left: 30vw;
+}
+
+.formular_navn {
+    height: 30px
+}
+
+.formular_email {
+    height: 30px;
+}
+
+/* OM VÆRKSTED SLUT */
+
+/* OM BUTIK START */
+
+.lilleTekstWrapper {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    margin: 0 10vw;
+
+}
+
+.om_butikBillede {
+
+    width: 80vw;
+    height: auto;
+    margin: 0 10vw;
+}
+
+.omButikTekst {
+
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+/* OM BUTIK SLUT */
 
 @media screen and (min-width:768px) {
 
@@ -207,12 +331,13 @@ button:focus {
         width: 60%;
     }
 
+    /*
     .produktWrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
     }
-
+*/
     .fb_logo,
     .ins_logo {
         width: 25%;
@@ -224,19 +349,33 @@ button:focus {
         margin-top: 40px;
 
     }
-    .navigation {
-        margin-left: 50%
+
+    .slogan {
+        width: 100%;
     }
+
+    .presentVideo {
+        height: 30vh;
+    }
+
+
 
 
 }
 
 @media screen and (min-width:1024px) {
+    /*
     .produktWrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
 
+    }
+*/
+    .sofabordeWrapper {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .fb_logo,
@@ -251,8 +390,34 @@ button:focus {
     }
 
 
+    .slogan h2 {
+        font-size: 1.8em;
+        font-style: italic;
+    }
+
+    .presentVideo {
+        height: 50vh;
+    }
+
+    .lilleTekstWrapper {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+    }
 
 
 }
 
-@media screen and (min-width:1786px) {}
+@media screen and (min-width:1440px) {
+
+
+    .presentVideo {
+
+        margin: 10vh 20vw;
+        margin-top: 10vh;
+        height: 60vh;
+        width: 60vw;
+
+    }
+
+
+}

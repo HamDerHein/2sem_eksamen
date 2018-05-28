@@ -31,16 +31,16 @@
       console.log("Hent SVG");
 
 
-      sort = document.querySelector(".farveskift #sort");
-      jasmin_gul = document.querySelector("#farveskift #jasmin_gul");
-      hindbaer_rod = document.querySelector("#farveskift #hindbaer_rod");
-      lyserod = document.querySelector("#farveskift #lyserod");
-      midnatsblaa = document.querySelector("#farveskift #midnatsblaa");
-      petroleums_blaa = document.querySelector("#farveskift #petroleums_blaa");
-      aquamarine = document.querySelector("#farveskift #aquamarine");
-      graa = document.querySelector("#farveskift #graa");
-      lys_graa = document.querySelector("#farveskift #lys_graa");
-      sort = document.querySelector("#farveskift #sort");
+      sort = document.querySelector("#sort");
+      jasmin_gul = document.querySelector("#jasmin_gul");
+      hindbaer_rod = document.querySelector("#hindbaer_rod");
+      lyserod = document.querySelector("#lyserod");
+      midnatsblaa = document.querySelector("#midnatsblaa");
+      petroleums_blaa = document.querySelector("#petroleums_blaa");
+      aquamarine = document.querySelector("#aquamarine");
+      graa = document.querySelector("#graa");
+      lys_graa = document.querySelector("#lys_graa");
+      sort = document.querySelector("#sort");
   }
 
   //----------------------------------------------

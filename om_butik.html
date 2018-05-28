@@ -7,29 +7,35 @@
     <title></title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
-        <nav class="navigation">
-            <a href="projekter.html"><button>Projekter</button></a>
-            <a href="produkter.html"><button>Produkter</button></a>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Om</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="om_vaerksted.html"> Værksted </a>
-                    <a href="om_butik.html">Butik</a>
+        <div class="headerWrapper">
+            <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
+            <nav class="navigation">
+                <a href="projekter.html"><button class="menu">Projekter</button></a>
+                <a href="produkter.html"><button class="menu">Produkter</button></a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Om</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="om_vaerksted.html">Værksted</a>
+                        <a href="om_butik.html">Butik</a>
+
+                    </div>
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
     </header>
 
     <img data-butik_billede src="" alt="" class="om_butikBillede">
     <article>
-        <p data-butik_tekst></p>
+        <p data-butik_tekst class="omButikTekst"></p>
     </article>
-    <article>
+    <article class="lilleTekstWrapper">
         <p data_lilleTekst></p>
         <p data_lilleTekst2></p>
         <p data_lilleTekst3></p>

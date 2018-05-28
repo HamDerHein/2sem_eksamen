@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerWrapper">
+            <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
+            <nav class="navigation">
+                <a href="projekter.html"><button class="menu">Projekter</button></a>
+                <a href="produkter.html"><button class="menu">Produkter</button></a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Om</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="om_vaerksted.html">Værksted</a>
+                        <a href="om_butik.html">Butik</a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <nav id="filter">
+        <button class="alle">Alle</button>
+        <button class="spiseborde">Spiseborde</button>
+        <button class="sofaborde">Sofaborde</button>
+        <button class="hylder">Hylder</button>
+    </nav>
+
+    <!--SPISEBORD START-->
+    <section class="produktWrapper">
+
+
+
+        <div class="spisebordWrapper">
+            <section id="displaySpiseborde">
+                <template id="spisebordTemplate">
+            <article>
+               <h3 id="overskrift" data-overskriftSpisebord></h3>
+                <img data-billedeSpisebord src="" alt="" style="width: 50%">
+                <details closed>
+                <summary data-omSpisebord></summary>
+                <p data-spisebord_beskrivelse></p>
+            </details>
+            </article>
+        </template>
+            </section>
+        </div>
+
+
+        <article class="farveskift">
+            <h3 data-overskriftFarveskift></h3>
+            <div id="farveskift"></div>
+            <details closed>
+                <summary data-farvevalg></summary>
+
+                <div class="kassewrapper">
+                    <div id="kasse1"></div>
+                    <div id="kasse2"></div>
+                    <div id="kasse3"></div>
+                    <div id="kasse4"></div>
+                    <div id="kasse5"></div>
+                    <div id="kasse6"></div>
+                    <div id="kasse7"></div>
+                    <div id="kasse8"></div>
+                    <div id="kasse9"></div>
+                </div>
+            </details>
+        </article>
+
+
+        <div class="sofabordWrapper">
+            <section id="displaySofaborde">
+                <template id="sofabordTemplate">
+            <article class="sofabordeWrapper">
+               <h3 id="overskrift" data-overskriftSofabord></h3>
+                <img data-billedeSofabord src="" alt="" style="width: 50%">
+                <details closed>
+                <summary data-omSofabord></summary>
+                <p data-sofabord_beskrivelse></p>
+            </details>
+            </article>
+        </template>
+            </section>
+        </div>
+
+
+        <div class="hyldeWrapper">
+            <section id="displayHylder">
+                <template id="hyldeTemplate">
+            <article class="hylderWrapper">
+               <h3 id="overskrift" data-overskriftHylde></h3>
+                <img data-billedeHylde src="" alt="" style="width: 50%">
+                <details closed>
+                <summary data-omHylde></summary>
+                <p data-hylde_beskrivelse></p>
+            </details>
+            </article>
+        </template>
+            </section>
+        </div>
+
+
+    </section>
+
+
+    <script src="hentJson.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="bordplade.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJsonSpisebord);
+
+
+        async function hentJsonSpisebord() {
+
+            let myTemplate = document.querySelector("#spisebordTemplate")
+            let modtager = document.querySelector("#displaySpiseborde")
+
+            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/spiseborde/");
+            let event = await jsonData.json();
+
+            console.log(event);
+
+            event.forEach(function(element) {
+
+                let klon = myTemplate.cloneNode(true).content;
+                klon.querySelector("[data-overskriftSpisebord]").textContent = element.acf.overskrift;
+                klon.querySelector("[data-billedeSpisebord]").src = element.acf.billede;
+                klon.querySelector("[data-spisebord_beskrivelse]").innerHTML = element.acf.beskrivelse;
+                klon.querySelector("[data-omSpisebord]").textContent = element.acf.udvidet_info;
+                modtager.appendChild(klon);
+            })
+            hentJsonSofabord();
+        }
+
+        async function hentJsonSofabord() {
+
+            let myTemplate = document.querySelector("#sofabordTemplate")
+            let modtager = document.querySelector("#displaySofaborde")
+
+            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/sofaborde/");
+            let event = await jsonData.json();
+
+            console.log(event);
+
+            event.forEach(function(element) {
+
+                let klon = myTemplate.cloneNode(true).content;
+                klon.querySelector("[data-overskriftSofabord]").textContent = element.acf.overskrift;
+                klon.querySelector("[data-billedeSofabord]").src = element.acf.billede;
+                klon.querySelector("[data-sofabord_beskrivelse]").innerHTML = element.acf.beskrivelse;
+                klon.querySelector("[data-omSofabord]").textContent = element.acf.udvidet_info;
+                modtager.appendChild(klon);
+            })
+            hentJsonHylder();
+        }
+
+        async function hentJsonHylder() {
+
+            let myTemplate = document.querySelector("#hyldeTemplate")
+            let modtager = document.querySelector("#displayHylder")
+
+            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/hylder/");
+            let event = await jsonData.json();
+
+            console.log(event);
+
+            event.forEach(function(element) {
+
+                let klon = myTemplate.cloneNode(true).content;
+                klon.querySelector("[data-overskriftHylde]").textContent = element.acf.overskrift;
+                klon.querySelector("[data-billedeHylde]").src = element.acf.billede;
+                klon.querySelector("[data-hylde_beskrivelse]").innerHTML = element.acf.beskrivelse;
+                klon.querySelector("[data-omHylde]").textContent = element.acf.udvidet_info;
+                modtager.appendChild(klon);
+            })
+
+        }
+    </script>
+</body>
+
+</html>
