@@ -55,21 +55,24 @@ summary {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #dab693;
+    background-color: #4b657a;
     max-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-left: -3px;
-    width: 75px;
+    width: 120px;
 }
 
 .dropdown-content a {
     margin-left: -10px;
+    font-size: 1.2em;
+    font-family: Hind Vadodara;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
+    ;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -166,6 +169,11 @@ summary {
     justify-content: flex-end;
 }
 
+.navigation button {
+    font-size: 1.2em;
+    font-family: Hind Vadodara;
+}
+
 .logo {
     width: 200px;
 }
@@ -195,13 +203,15 @@ summary {
 
 .fb_logo,
 .ins_logo {
-    width: 70%;
+    width: 30%;
     margin: 15px 0;
     cursor: pointer;
 }
 
 .kontaktWrapper {
     margin-left: 20px;
+    font-family: Raleway Light;
+    font-size: 1.1em;
 }
 
 
@@ -228,8 +238,8 @@ summary {
 }
 
 .slogan h2 {
-    font-size: 1.2em;
     font-style: italic;
+    font-size: 1.3em;
 }
 
 
@@ -263,8 +273,10 @@ summary {
 
 .vrVideo {
     width: 80vw;
-    height: 30vh;
-    margin: 0 10vw;
+    height: 40vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 
 .omVaerstedTekst {
@@ -330,6 +342,9 @@ summary {
 
 /* PRODUKTER SLUT */
 
+
+/*TABLET*/
+
 @media screen and (min-width:768px) {
     .produkt_billede {
         width: 60%;
@@ -357,7 +372,17 @@ summary {
     .presentVideo {
         height: 30vh;
     }
+    .vrVideo {
+        height: 300px;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
+
+
+/*LABTOP*/
 
 @media screen and (min-width:1024px) {
     /*
@@ -409,7 +434,17 @@ summary {
     .imgContainer {
         height: 400px;
     }
+    .vrVideo {
+        height: 500px;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
+
+
+/*STOR SKÆRM*/
 
 @media screen and (min-width:1440px) {
     .presentVideo {
@@ -417,5 +452,12 @@ summary {
         margin-top: 10vh;
         height: 60vh;
         width: 60vw;
+    }
+    .vrVideo {
+        height: 500px;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

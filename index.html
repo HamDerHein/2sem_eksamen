@@ -9,61 +9,45 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> </head>
 
 <body>
     <header class="header">
         <div class="headerWrapper">
             <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
             <nav class="navigation">
-                <a href="produkter.html"><button class="menu">Produkter</button></a>
-                <a href="projekter.html"><button class="menu">Projekter</button></a>
+                <a href="produkter.html">
+                    <button class="menu">PRODUKTER</button>
+                </a>
+                <a href="projekter.html">
+                    <button class="menu">PROJEKTER</button>
+                </a>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Om</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="om_vaerksted.html">Værksted</a>
-                        <a href="om_butik.html">Butik</a>
-
-                    </div>
+                    <button onclick="myFunction()" class="dropbtn">OM</button>
+                    <div id="myDropdown" class="dropdown-content"> <a href="om_vaerksted.html">VÆRKSTED</a> <a href="om_butik.html">BUTIK</a> </div>
                 </div>
-
             </nav>
         </div>
     </header>
-
-
-    <article class="w3-content w3-display-container">
-        <img data-billede class="mySlides" src="" style="width:100%">
-        <img data-billede2 class="mySlides" src="" style="width:100%">
-        <img data-billede3 class="mySlides" src="" style="width:100%">
-        <img data-billede4 class="mySlides" src="" style="width:100%">
-        <img data-billede5 class="mySlides" src="" style="width:100%">
-
+    <article class="w3-content w3-display-container"> <img data-billede class="mySlides" src="" style="width:100%"> <img data-billede2 class="mySlides" src="" style="width:100%"> <img data-billede3 class="mySlides" src="" style="width:100%"> <img data-billede4 class="mySlides" src="" style="width:100%"> <img data-billede5 class="mySlides" src="" style="width:100%">
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </article>
     <article class="slogan">
-        <h2 data-slogan></h2>
-    </article>
-
+        <h2 data-slogan></h2> </article>
     <footer class="footer">
-
         <div class="line"></div>
-
         <div class="footerWrapper">
-
             <div class="kontaktWrapper">
                 <p data-kontakt></p>
                 <p data-aabningstider></p>
             </div>
             <div class="someWrapper">
                 <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="" alt="" class="fb_logo"></a>
-                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a></div>
+                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a>
+            </div>
         </div>
     </footer>
-
-
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
@@ -86,7 +70,6 @@
             }
             x[slideIndex - 1].style.display = "block";
         }
-
     </script>
     <script src="hentJsonForside.js"></script>
     <script src="hentJsonFootHead.js"></script>
