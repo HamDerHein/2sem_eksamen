@@ -325,6 +325,16 @@ summary {
 
 /* OM BUTIK SLUT */
 
+/* PRODUKTER START */
+
+.produktWrapper {
+    padding: 2em 2em 1em 4em;
+}
+
+
+
+/* PRODUKTER SLUT */
+
 @media screen and (min-width:768px) {
 
     .produkt_billede {
@@ -372,12 +382,6 @@ summary {
 
     }
 */
-    .sofabordeWrapper {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .fb_logo,
     .ins_logo {
         width: 20%;
@@ -401,9 +405,37 @@ summary {
 
     .lilleTekstWrapper {
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    #displaySpiseborde {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    #displaySofaborde {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #displayHylder {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    #overskrift {
+        height: 65px;
+        text-align: center;
+    }
+
+    .imgContainer {
+        height: 400px;
+    }
 
 }
 

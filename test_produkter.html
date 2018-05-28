@@ -46,20 +46,12 @@
 
         <div class="spisebordWrapper">
             <section id="displaySpiseborde">
-                <template id="spisebordTemplate">
-            <article>
-               <h3 id="overskrift" data-overskriftSpisebord></h3>
-                <img data-billedeSpisebord src="" alt="" style="width: 50%">
-                <details closed>
-                <summary data-omSpisebord></summary>
-                <p data-spisebord_beskrivelse></p>
-            </details>
-            </article>
-        </template>
+
             </section>
         </div>
 
-
+        <section id="displayFarveskift">
+            <template id="farveskriftTemplate">
         <article class="farveskift">
             <h3 data-overskriftFarveskift></h3>
             <div id="farveskift"></div>
@@ -79,27 +71,52 @@
                 </div>
             </details>
         </article>
+        </template>
+        </section>
 
 
         <div class="sofabordWrapper">
             <section id="displaySofaborde">
-                <template id="sofabordTemplate">
-            <article class="sofabordeWrapper">
-               <h3 id="overskrift" data-overskriftSofabord></h3>
-                <img data-billedeSofabord src="" alt="" style="width: 50%">
-                <details closed>
-                <summary data-omSofabord></summary>
-                <p data-sofabord_beskrivelse></p>
-            </details>
-            </article>
-        </template>
+
             </section>
         </div>
 
 
         <div class="hyldeWrapper">
             <section id="displayHylder">
-                <template id="hyldeTemplate">
+
+            </section>
+        </div>
+
+
+    </section>
+
+
+    <template id="spisebordTemplate">
+            <article>
+               <h3 id="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
+                <img data-billedeSpisebord src="" alt="" style="width: 100%"></div>
+                <details closed>
+                <summary data-omSpisebord></summary>
+                <p data-spisebord_beskrivelse></p>
+            </details>
+            </article>
+    </template>
+
+
+
+    <template id="sofabordTemplate">
+                    <article class="sofabordeWrapper">
+                       <h3 id="overskrift" data-overskriftSofabord></h3>
+                        <img data-billedeSofabord src="" alt="" style="width: 80%">
+                        <details closed>
+                        <summary data-omSofabord></summary>
+                        <p data-sofabord_beskrivelse></p>
+                    </details>
+                    </article>
+    </template>
+
+    <template id="hyldeTemplate">
             <article class="hylderWrapper">
                <h3 id="overskrift" data-overskriftHylde></h3>
                 <img data-billedeHylde src="" alt="" style="width: 50%">
@@ -108,87 +125,14 @@
                 <p data-hylde_beskrivelse></p>
             </details>
             </article>
-        </template>
-            </section>
-        </div>
+    </template>
 
 
-    </section>
 
-
-    <script src="hentJson.js"></script>
     <script src="dropdown.js"></script>
     <script src="bordplade.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", hentJsonSpisebord);
-
-
-        async function hentJsonSpisebord() {
-
-            let myTemplate = document.querySelector("#spisebordTemplate")
-            let modtager = document.querySelector("#displaySpiseborde")
-
-            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/spiseborde/");
-            let event = await jsonData.json();
-
-            console.log(event);
-
-            event.forEach(function(element) {
-
-                let klon = myTemplate.cloneNode(true).content;
-                klon.querySelector("[data-overskriftSpisebord]").textContent = element.acf.overskrift;
-                klon.querySelector("[data-billedeSpisebord]").src = element.acf.billede;
-                klon.querySelector("[data-spisebord_beskrivelse]").innerHTML = element.acf.beskrivelse;
-                klon.querySelector("[data-omSpisebord]").textContent = element.acf.udvidet_info;
-                modtager.appendChild(klon);
-            })
-            hentJsonSofabord();
-        }
-
-        async function hentJsonSofabord() {
-
-            let myTemplate = document.querySelector("#sofabordTemplate")
-            let modtager = document.querySelector("#displaySofaborde")
-
-            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/sofaborde/");
-            let event = await jsonData.json();
-
-            console.log(event);
-
-            event.forEach(function(element) {
-
-                let klon = myTemplate.cloneNode(true).content;
-                klon.querySelector("[data-overskriftSofabord]").textContent = element.acf.overskrift;
-                klon.querySelector("[data-billedeSofabord]").src = element.acf.billede;
-                klon.querySelector("[data-sofabord_beskrivelse]").innerHTML = element.acf.beskrivelse;
-                klon.querySelector("[data-omSofabord]").textContent = element.acf.udvidet_info;
-                modtager.appendChild(klon);
-            })
-            hentJsonHylder();
-        }
-
-        async function hentJsonHylder() {
-
-            let myTemplate = document.querySelector("#hyldeTemplate")
-            let modtager = document.querySelector("#displayHylder")
-
-            let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/hylder/");
-            let event = await jsonData.json();
-
-            console.log(event);
-
-            event.forEach(function(element) {
-
-                let klon = myTemplate.cloneNode(true).content;
-                klon.querySelector("[data-overskriftHylde]").textContent = element.acf.overskrift;
-                klon.querySelector("[data-billedeHylde]").src = element.acf.billede;
-                klon.querySelector("[data-hylde_beskrivelse]").innerHTML = element.acf.beskrivelse;
-                klon.querySelector("[data-omHylde]").textContent = element.acf.udvidet_info;
-                modtager.appendChild(klon);
-            })
-
-        }
-    </script>
+    <script src="hentJsonProdukter.js"></script>
+    <script src="hentJsonFootHead.js"></script>
 </body>
 
 </html>
