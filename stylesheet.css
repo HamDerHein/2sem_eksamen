@@ -22,21 +22,21 @@ summary {
 }
 
 
-
-
 /*FONTS START */
+
 
 /*DROPDOWN MENU START */
 
 .dropbtn,
 .menu {
-    background-color: #dab693;
+    background-color: #1e3f59;
     color: white;
     padding: 8px 4px;
     font-size: 14px;
     border: none;
     cursor: pointer;
-    width: 80px;
+    width: 120px;
+    height: 70px;
     margin: 0 -3px;
 }
 
@@ -86,13 +86,13 @@ summary {
 
 /*DROPDOWN MENU SLUT */
 
+
 /* SOFABORD BORDPLADE SKIFT FARVE START */
 
 .kassewrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
 
 #kasse1,
 #kasse2,
@@ -149,8 +149,8 @@ summary {
 }
 
 
-
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
+
 
 /* HEADER START */
 
@@ -164,10 +164,15 @@ summary {
     margin: auto 0;
     display: flex;
     justify-content: flex-end;
-
 }
 
+.logo {
+    width: 200px;
+}
+
+
 /* HEADET SLUT */
+
 
 /* FOOTER START */
 
@@ -175,8 +180,6 @@ summary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-
-
 }
 
 .line {
@@ -204,6 +207,7 @@ summary {
 
 /* FOOTER SLUT */
 
+
 /* FORSIDE START */
 
 .w3-display-container {
@@ -221,25 +225,20 @@ summary {
     padding: 0 10px;
     display: flex;
     justify-content: center;
-
 }
 
 .slogan h2 {
     font-size: 1.2em;
     font-style: italic;
-    font-weight: bold;
-
 }
-
-
 
 
 /* FORSIDE SLUT */
 
+
 /* PROJEKTER START */
 
 .tekstProjekter {
-
     width: 80vw;
     margin: 0 auto;
     padding: 5px;
@@ -252,14 +251,13 @@ summary {
 }
 
 .projekter_billede {
-
     width: 90vw;
     margin: 5px 5vw;
 }
 
 
-
 /* PROJEKTER SLUT */
+
 
 /* OM VÆRKSTED START */
 
@@ -274,7 +272,6 @@ summary {
     margin: 0 auto;
     padding: 5px;
 }
-
 
 .bestillingsmenu {
     width: 60vw;
@@ -295,28 +292,26 @@ summary {
     height: 30px;
 }
 
+
 /* OM VÆRKSTED SLUT */
+
 
 /* OM BUTIK START */
 
 .lilleTekstWrapper {
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 80vw;
     margin: 0 10vw;
-
 }
 
 .om_butikBillede {
-
     width: 80vw;
     height: auto;
     margin: 0 10vw;
 }
 
 .omButikTekst {
-
     width: 80vw;
     margin: 0 auto;
     padding: 5px;
@@ -325,6 +320,7 @@ summary {
 
 /* OM BUTIK SLUT */
 
+
 /* PRODUKTER START */
 
 .produktWrapper {
@@ -332,15 +328,12 @@ summary {
 }
 
 
-
 /* PRODUKTER SLUT */
 
 @media screen and (min-width:768px) {
-
     .produkt_billede {
         width: 60%;
     }
-
     /*
     .produktWrapper {
         display: grid;
@@ -357,20 +350,13 @@ summary {
     .someWrapper {
         margin-left: 5%;
         margin-top: 40px;
-
     }
-
     .slogan {
         width: 100%;
     }
-
     .presentVideo {
         height: 30vh;
     }
-
-
-
-
 }
 
 @media screen and (min-width:1024px) {
@@ -388,68 +374,48 @@ summary {
         margin: 15px 20px;
         cursor: pointer;
     }
-
     .someWrapper {
         margin-left: 60%;
     }
-
-
     .slogan h2 {
         font-size: 1.8em;
         font-style: italic;
     }
-
     .presentVideo {
         height: 50vh;
     }
-
     .lilleTekstWrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
     #displaySpiseborde {
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
     }
-
     #displaySofaborde {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
     #displayHylder {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
     }
-
     #overskrift {
         height: 65px;
         text-align: center;
     }
-
     .imgContainer {
         height: 400px;
     }
-
 }
 
 @media screen and (min-width:1440px) {
-
-
     .presentVideo {
-
         margin: 10vh 20vw;
         margin-top: 10vh;
         height: 60vh;
         width: 60vw;
-
     }
-
-
 }
