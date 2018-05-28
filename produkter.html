@@ -33,71 +33,27 @@
 
 
     <nav id="filter">
-        <button class="alle">Alle</button>
-        <button class="spiseborde">Spiseborde</button>
-        <button class="sofaborde">Sofaborde</button>
-        <button class="hylder">Hylder</button>
+        <button class="alle" onclick="alle()">Alle</button>
+        <button class="spiseborde" onclick="visSpiseborde()">Spiseborde</button>
+        <button class="sofaborde" onclick="visSofaborde()">Sofaborde</button>
+        <button class="hylder" onclick="visHylder()">Hylder</button>
     </nav>
 
     <!--SPISEBORD START-->
-
-
     <section class="produktWrapper">
 
-        <article class="spisebord1">
-            <h3 data-overskriftSpisebord1></h3>
-            <img data-spisebord_billede src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
-            <details closed>
-                <summary data-omSpisebord></summary>
-                <p data-spisebord_beskrivelse></p>
-            </details>
-        </article>
-
-        <article class="spisebord2">
-            <h3 data-overskriftSpisebord2></h3>
-            <img data-spisebord_billede2 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
-            <details closed>
-                <summary data-omSpisebord2></summary>
-                <p data-spisebord_beskrivelse2></p>
-            </details>
-        </article>
-
-        <article class="spisebord3">
-            <h3 data-overskriftSpisebord3></h3>
-            <img data-spisebord_billede3 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
-            <details closed>
-                <summary data-omSpisebord3></summary>
-                <p data-spisebord_beskrivelse3></p>
-            </details>
-        </article>
-
-        <article class="sofabord4">
-            <h3 data-overskriftSpisebord4></h3>
-            <img data-spisebord_billede4 src="" alt="" class="spisebord_billede produkt_billede" style="width: 100%">
-            <details closed>
-                <summary data-omSpisebord4></summary>
-                <p data-spisebord_beskrivelse4></p>
-            </details>
-        </article>
 
 
+        <div class="spisebordWrapper">
+            <section id="displaySpiseborde">
 
-        <!--SPISEBORD SLUT-->
+            </section>
+        </div>
 
-        <!--SOFABORD START-->
-
-
-        <article class="sofabord1">
-            <h3 data-overskriftSofabord1></h3>
-            <img data-sofabord_billede src="" alt="" class="sofabord_billede produkt_billede" style="width: 100%;">
-            <details closed>
-                <summary data-omSofabord></summary>
-                <p data-sofabord_beskrivelse></p>
-            </details>
-        </article>
-
-        <article class="sofabord2">
-            <h3 data-overskriftSofabord2></h3>
+        <section id="displayFarveskift">
+            <template id="farveskriftTemplate">
+        <article class="farveskift">
+            <h3 data-overskriftFarveskift></h3>
             <div id="farveskift"></div>
             <details closed>
                 <summary data-farvevalg></summary>
@@ -115,68 +71,69 @@
                 </div>
             </details>
         </article>
-        <article class="sofabord3">
-            <h3 data-overskriftSofabord3></h3>
-            <img data-sofabord_billede2 src="" alt="" class="sofabord_billede produkt_billede" style="width: 100%;">
-            <details closed>
-                <summary data-omSofabord2></summary>
-                <p data-sofabord_beskrivelse2></p>
-            </details>
-        </article>
-
-        <!--SOFABORD SLUT-->
-
-        <!--HYLDER START-->
+        </template>
+        </section>
 
 
-        <article class="hylde1">
-            <h3 data-overskriftHylder1></h3>
-            <img data-hylde_billede src="" alt="" class="hylde_billede produkt_billede" style="width: 100%">
-            <details closed>
-                <summary data-omHylden></summary>
-                <p data-hylde_beskrivelse></p>
-            </details>
-        </article>
-        <article class="hylde2">
-            <h3 data-overskriftHylder2></h3>
-            <img data-hylde_billede2 src="" alt="" class="hylde_billede2 produkt_billede" style="width: 100%;">
-            <details closed>
-                <summary data-omHylden2></summary>
-                <p data-hylde_beskrivelse2></p>
-            </details>
-        </article>
-        <article class="hylde3">
-            <h3 data-overskriftHylder3></h3>
-            <img data-hylde_billede3 src="" alt="" class="hylde_billede2 produkt_billede" style="width: 100%;">
-            <details closed>
-                <summary data-omHylden3></summary>
-                <p data-hylde_beskrivelse3></p>
-            </details>
-        </article>
+        <div class="sofabordWrapper">
+            <section id="displaySofaborde">
+
+            </section>
+        </div>
 
 
-        <!-- HYLDER SLUT-->
+        <div class="hyldeWrapper">
+            <section id="displayHylder">
+
+            </section>
+        </div>
+
 
     </section>
 
-    <footer class="footer">
 
-        <div class="line"></div>
+    <template id="spisebordTemplate">
+            <article>
+               <h3 id="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
+                <img data-billedeSpisebord src="" alt="" style="width: 100%"></div>
+                <details closed>
+                <summary data-omSpisebord></summary>
+                <p data-spisebord_beskrivelse></p>
+            </details>
+            </article>
+    </template>
 
-        <div class="footerWrapper">
 
-            <div class="kontaktWrapper">
-                <p data-kontakt></p>
-                <p data-aabningstider></p>
-            </div>
-            <div class="someWrapper">
-                <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="" alt="" class="fb_logo"></a>
-                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a></div>
-        </div>
-    </footer>
-    <script src="hentJson.js"></script>
+
+    <template id="sofabordTemplate">
+                    <article class="sofabordeWrapper">
+                       <h3 id="overskrift" data-overskriftSofabord></h3>
+                        <img data-billedeSofabord src="" alt="" style="width: 80%">
+                        <details closed>
+                        <summary data-omSofabord></summary>
+                        <p data-sofabord_beskrivelse></p>
+                    </details>
+                    </article>
+    </template>
+
+    <template id="hyldeTemplate">
+            <article class="hylderWrapper">
+               <h3 id="overskrift" data-overskriftHylde></h3>
+                <img data-billedeHylde src="" alt="" style="width: 50%">
+                <details closed>
+                <summary data-omHylde></summary>
+                <p data-hylde_beskrivelse></p>
+            </details>
+            </article>
+    </template>
+
+
+
+    <script src="sortering.js"></script>
     <script src="dropdown.js"></script>
     <script src="bordplade.js"></script>
+    <script src="hentJsonProdukter.js"></script>
+    <script src="hentJsonFootHead.js"></script>
 </body>
 
 </html>

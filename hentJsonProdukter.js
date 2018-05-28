@@ -77,25 +77,28 @@
 
  async function hentJsonFarveskift() {
 
-     let myTemplate = document.querySelector("#farveskriftTemplate")
-     let modtager = document.querySelector("#displayFarveskift")
 
-     let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/122/");
-     let event = await jsonData.json();
+     let jsonObjekt = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/122/");
+     let farveskift = await jsonObjekt.json();
+     document.querySelector("[data-overskriftFarveskift]").textContent = farveskift.acf.overskrift10;
+     document.querySelector("[data-farvevalg]").textContent = farveskift.acf.overskrift10;
 
-     console.log(event);
 
-     event.forEach(function (element) {
 
-         let klon = myTemplate.cloneNode(true).content;
-         klon.querySelector("[data-overskriftFarveskift]").textContent = element.acf.overskrift10;
-         modtager.appendChild(klon);
-
-         event.forEach(function (element) {
-
-             let klon = myTemplate.cloneNode(true).content;
-             klon.querySelector("[data-overskriftHylde]").textContent = element.acf.overskrift;
-         })
-
-     });
+     //     let myTemplate = document.querySelector("#farveskriftTemplate")
+     //     let modtager = document.querySelector("#displayFarveskift")
+     //
+     //     let jsonData = await fetch("http://frilander.dk/kea/2sem_eksamen/wordpress/wp-json/wp/v2/produkter/122/");
+     //     let event = await jsonData.json();
+     //
+     //     console.log(event);
+     //
+     //     event.forEach(function (element) {
+     //
+     //         let klon = myTemplate.cloneNode(true).content;
+     //         klon.querySelector("[data-overskriftFarveskift]").textContent = element.acf.overskrift10;
+     //
+     //         modtager.appendChild(klon);
+     //
+     //     });
  }
