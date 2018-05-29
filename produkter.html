@@ -23,7 +23,6 @@
                     <div id="myDropdown" class="dropdown-content">
                         <a href="om_vaerksted.html">Værksted</a>
                         <a href="om_butik.html">Butik</a>
-
                     </div>
                 </div>
 
@@ -93,7 +92,7 @@
 
 
     <template id="spisebordTemplate">
-            <article>
+            <article class="spisebordeWrapper">
                <h3 id="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
                 <img data-billedeSpisebord src="" alt="" style="width: 100%"></div>
                 <details closed>
@@ -108,7 +107,7 @@
     <template id="sofabordTemplate">
                     <article class="sofabordeWrapper">
                        <h3 id="overskrift" data-overskriftSofabord></h3>
-                        <img data-billedeSofabord src="" alt="" style="width: 80%">
+                        <div class="imgContainerSofa"><img data-billedeSofabord src="" alt="" style="width: 100%"></div>
                         <details closed>
                         <summary data-omSofabord></summary>
                         <p data-sofabord_beskrivelse></p>
@@ -119,7 +118,7 @@
     <template id="hyldeTemplate">
             <article class="hylderWrapper">
                <h3 id="overskrift" data-overskriftHylde></h3>
-                <img data-billedeHylde src="" alt="" style="width: 50%">
+                <div class="imgContainerHylde"><img data-billedeHylde src="" alt="" style="width: 100%"></div>
                 <details closed>
                 <summary data-omHylde></summary>
                 <p data-hylde_beskrivelse></p>
@@ -129,11 +128,27 @@
 
 
 
+
+    <footer class="footer">
+        <div class="line"></div>
+        <div class="footerWrapper">
+            <div class="kontaktWrapper">
+                <p data-kontakt></p>
+                <p data-aabningstider></p>
+            </div>
+            <div class="someWrapper">
+                <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="" alt="" class="fb_logo"></a>
+                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="hentJsonFootHead.js"></script>
     <script src="sortering.js"></script>
     <script src="dropdown.js"></script>
     <script src="bordplade.js"></script>
     <script src="hentJsonProdukter.js"></script>
-    <script src="hentJsonFootHead.js"></script>
 </body>
 
 </html>
