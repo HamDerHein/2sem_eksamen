@@ -11,6 +11,7 @@ document.querySelector(".bar3").addEventListener("click", ("change"));
 function toggleMenu() {
     document.querySelector(".dropbtn").classList.toggle("change");
 
+    console.log("test_dropdown")
 }
 
 

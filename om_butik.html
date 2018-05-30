@@ -13,34 +13,43 @@
 
 <body>
     <header class="header">
-        <div class="headerWrapper">
 
-            <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
-            <nav class="navigation">
-                <a href="projekter.html"><button class="menu">Projekter</button></a>
-                <a href="produkter.html"><button class="menu">Produkter</button></a>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Om</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="om_vaerksted.html">Værksted</a>
-                        <a href="om_butik.html">Butik</a>
+        <a href="index.html"><img data-logo class="logo" src="" alt=""></a>
 
-                    </div>
-                </div>
-
-            </nav>
-
+        <div class="burgerMenu">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content"> <a href="produkter.html">Produkter</a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om KnAsT Butik</a> </div>
+            </div>
         </div>
-    </header>
 
+
+        <nav class="navigation">
+            <a href="projekter.html"><button class="menu">Projekter</button></a>
+            <a href="produkter.html"><button class="menu">Produkter</button></a>
+            <div class="dropdown2">
+                <button onclick="dropdownMenu()" class="dropbtn2">Om</button>
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a href="om_vaerksted.html">Værksted</a>
+                    <a href="om_butik.html">Butik</a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
     <img data-butik_billede src="" alt="" class="om_butikBillede">
     <article>
         <p data-butik_tekst class="omButikTekst"></p>
     </article>
     <article class="lilleTekstWrapper">
-        <p data_lilleTekst></p>
+        <p data_lilleTekst class="lilleTekst1"></p>
         <p data_lilleTekst2></p>
-        <p data_lilleTekst3></p>
+        <p data_lilleTekst3 class="lilleTekst3"></p>
         <p data_lilleTekst4></p>
     </article>
     <article>
@@ -68,6 +77,7 @@
     <script src="hentJsonFootHead.js"></script>
     <script src="location.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap"></script>
+    <script src="dropdownmenu.js"></script>
 
 </body>
 

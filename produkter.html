@@ -9,27 +9,40 @@
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
     <header class="header">
-        <div class="headerWrapper">
-            <a href="index.html"><img src="" alt="" data-logo class="logo"></a>
-            <nav class="navigation">
-                <a href="projekter.html"><button class="menu">Projekter</button></a>
-                <a href="produkter.html"><button class="menu">Produkter</button></a>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Om</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="om_vaerksted.html">Værksted</a>
-                        <a href="om_butik.html">Butik</a>
-                    </div>
-                </div>
 
-            </nav>
+        <a href="index.html"><img data-logo class="logo" src="" alt=""></a>
+
+        <div class="burgerMenu">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content"> <a href="produkter.html">Produkter</a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om KnAsT Butik</a> </div>
+            </div>
         </div>
-    </header>
 
+
+        <nav class="navigation">
+            <a href="projekter.html"><button class="menu">Projekter</button></a>
+            <a href="produkter.html"><button class="menu">Produkter</button></a>
+            <div class="dropdown2">
+                <button onclick="dropdownMenu()" class="dropbtn2">Om</button>
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a href="om_vaerksted.html">Værksted</a>
+                    <a href="om_butik.html">Butik</a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
     <nav id="filter">
         <button class="alle" onclick="alle()">Alle</button>
@@ -146,9 +159,12 @@
 
     <script src="hentJsonFootHead.js"></script>
     <script src="sortering.js"></script>
-    <script src="dropdown.js"></script>
     <script src="bordplade.js"></script>
     <script src="hentJsonProdukter.js"></script>
+    <script src="dropdownmenu.js"></script>
+    <script src="dropdown.js"></script>
+
+
 </body>
 
 </html>
