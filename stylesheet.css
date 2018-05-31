@@ -30,8 +30,8 @@ summary {
 
 .dropbtn2,
 .menu {
-    background-color: #1e3f59;
-    color: #d4b6b9;
+    background-color: #a5c5b4;
+    color: #111;
     padding: 8px 4px;
     font-size: 14px;
     border: none;
@@ -45,7 +45,7 @@ summary {
 .dropbtn2:focus,
 .menu:hover,
 .menu:focus {
-    background-color: #1e3f59;
+    background-color: #a5c5b4;
 }
 
 .dropdown2 {
@@ -57,7 +57,7 @@ summary {
 .dropdown-content2 {
     display: none;
     position: absolute;
-    background-color: #4b657a;
+    background-color: #a5c5b4;
     max-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -73,7 +73,7 @@ summary {
 }
 
 .dropdown-content2 a {
-    color: #d4b6b9;
+    color: #111;
     ;
     padding: 12px 16px;
     text-decoration: none;
@@ -352,6 +352,10 @@ dropbtn {
     font-size: 1.3em;
 }
 
+.w3-black {
+    background-color: #a5c5b4 !important;
+}
+
 
 /* FORSIDE SLUT */
 
@@ -566,15 +570,18 @@ summary {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+        margin-bottom: 80px;
     }
     #displaySofaborde {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
+        margin-bottom: 80px;
     }
     #displayHylder {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
         width: 100%;
         grid-gap: 10px;
 
@@ -596,7 +603,7 @@ summary {
 
     #farveskift {
 
-        margin-top: -30px;
+        margin-top: 0px;
         margin-bottom: 65px;
     }
     /*
@@ -667,6 +674,7 @@ summary {
         .overskrift {
             text-align: center;
         }
+        /*
         .imgContainer {
             height: 440px;
         }
@@ -676,12 +684,15 @@ summary {
         .imgContainerSofa {
             height: 315px;
         }
+*/
         .farveskift summary {
-            margin-top: 142px;
+            margin-top: 65px;
+
         }
-        .imgContainerHylde {
+        /*        .imgContainerHylde {
             height: 640px;
         }
+*/
         .vrVideo {
             height: 500px;
             width: 60%;
