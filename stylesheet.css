@@ -9,6 +9,7 @@ body {
     /*    background-color: #efe1d3;*/
 }
 
+
 /*FONTS START */
 
 p {
@@ -26,7 +27,9 @@ summary {
     font-size: 1.3em;
 }
 
+
 /*FONTS START */
+
 
 /*DROPDOWN MENU START */
 
@@ -93,7 +96,9 @@ summary {
     font-family: Hind Vadodara, Bold;
 }
 
+
 /*DROPDOWN MENU SLUT */
+
 
 /* SOFABORD BORDPLADE SKIFT FARVE START */
 
@@ -157,7 +162,9 @@ summary {
     margin: 0 auto;
 }
 
+
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
+
 
 /* HEADER START */
 
@@ -207,23 +214,11 @@ dropbtn {
 .bar1,
 .bar2,
 .bar3 {
-    /* width: 35px;*/
+    width: 35px;
     height: 5px;
     background-color: #111;
     margin: 6px 0;
     transition: 0.5s;
-}
-
-.bar1 {
-    width: 15px;
-}
-
-.bar2 {
-    width: 25px;
-}
-
-.bar3 {
-    width: 35px;
 }
 
 .change .bar1 {
@@ -285,7 +280,9 @@ dropbtn {
     display: block;
 }
 
+
 /* HEADET SLUT */
+
 
 /* FOOTER START */
 
@@ -327,7 +324,9 @@ dropbtn {
     font-size: 1.2em;
 }
 
+
 /* FOOTER SLUT */
+
 
 /* FORSIDE START */
 
@@ -376,7 +375,9 @@ margin-bottom: 10px;
     color: #111 !important;
 }
 
+
 /* FORSIDE SLUT */
+
 
 /* PROJEKTER START */
 
@@ -399,16 +400,43 @@ margin-bottom: 10px;
     margin-top: 30px;
 }
 
+
 /* PROJEKTER SLUT */
+
 
 /* OM VÆRKSTED START */
 
-.vrVideo {
+.omVaerstedVideo_tekst {
+    font-family: Raleway;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 5px;
     width: 80vw;
-    height: 40vh;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 10vw;
+}
+
+.kontaktBeskrivelse {
+    font-family: Raleway;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 5px;
+    width: 80vw;
+}
+
+.kontaktOverskrift {
+    text-align: center;
+}
+
+.vaerkstedVideo_overskrift {
+    font-family: Hind Vadodara, Bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.vrVideo {
+    width: 100%;
+    height: auto;
     border: none;
 }
 
@@ -424,6 +452,7 @@ margin-bottom: 10px;
     display: grid;
     grid-template-rows: 2fr;
 }
+
 
 /*
 .formular_send {
@@ -473,7 +502,30 @@ textarea {
     width: 80%;
 }
 
+.butikVideo_overskrift {
+    font-family: Hind Vadodara, Bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.butikVideo {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.butikVideo_beksrivelse {
+    font-family: Raleway;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 5px;
+    width: 80vw;
+}
+
+
 /* OM VÆRKSTED SLUT */
+
 
 /* OM BUTIK START */
 
@@ -517,7 +569,9 @@ textarea {
     box-shadow: 2px 1px 40px rgba(0, 0, 0, .5);
 }
 
+
 /* OM BUTIK SLUT */
+
 
 /* PRODUKTER START */
 
@@ -531,13 +585,11 @@ textarea {
     padding: 0px 4px;
     font-family: Raleway, Light;
     font-size: 14px;
-    border: 3px;
-    border-style: double;
-    border-color: #e8d2bd;
+    border: none;
     cursor: pointer;
     width: 24vw;
     height: 35px;
-    margin: 40px -2px 0px -4px;
+    padding-top: 50px;
 }
 
 .sofabordeWrapper:nth-child(2) {
@@ -559,6 +611,7 @@ textarea {
     border-bottom: 3px;
     border-bottom-style: solid;
 }
+
 
 /*
 details summary::-webkit-details-marker {
@@ -591,13 +644,20 @@ bottom: -649px;
 */
 }
 
+
 /* PRODUKTER SLUT */
+
 
 /*TABLET*/
 
 @media screen and (min-width:768px) {
     .produkt_billede {
         width: 60%;
+    }
+    .butikVideo {
+        width: 60vw;
+        height: 30vw;
+        margin-left: 15vw;
     }
     #filter button {
         width: 10vw;
@@ -622,11 +682,9 @@ bottom: -649px;
         height: 30vh;
     }
     .vrVideo {
-        height: 300px;
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        border: none;
     }
     #displaySpiseborde {
         display: grid;
@@ -713,7 +771,13 @@ margin-top: 110px;
     .w3-display-left {
         margin-left: 12px;
     }
+    .vrVideo {
+        width: 60vw;
+        height: 30vw;
+        margin-left: 18vw;
+    }
 }
+
 
 /*LABTOP*/
 
@@ -872,7 +936,15 @@ height: 640px;
     .menu {
         background-color: #a5c5b4;
     }
+    .butikVideo {
+        height: 500px;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
+
 
 /*STOR SKÆRM*/
 
@@ -940,5 +1012,12 @@ height: 640px;
     .dropbtn2,
     .menu {
         background-color: #a5c5b4;
+    }
+    .butikVideo {
+        height: 500px;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
