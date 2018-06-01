@@ -10,6 +10,7 @@ async function hentJsonOmVaerksted() {
     document.querySelector("[data-kontaktOverskrift]").innerHTML = vaerksted.acf.kontaktoverskrift;
     document.querySelector("[data-kontaktBeskrivelse]").innerHTML = vaerksted.acf.kontaktbeksrivelse;
     document.querySelector("[data-vaerkstedVideo_overskrift]").innerHTML = vaerksted.acf.videooverskrift;
+    document.querySelector("[data-vaerkstedVideo_tekst]").innerHTML = vaerksted.acf.videotekst;
 
 
     //    document.querySelector("[data-vaerksted_tekst2]").textContent = vaerksted.acf.vaerksted_tekst2;
