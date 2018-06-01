@@ -11,15 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-</head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> </head>
 
 <body>
     <header class="header">
-
         <a href="index.html"><img data-logo class="logo" src="#" alt=""></a>
-
         <div class="burgerMenu">
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">
@@ -30,8 +26,6 @@
                 <div id="myDropdown" class="dropdown-content"> <a href="produkter.html">Produkter</a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om KnAsT Butik</a> </div>
             </div>
         </div>
-
-
         <nav class="navigation">
             <a href="projekter.html">
                 <div class="menu">Projekter</div>
@@ -41,30 +35,21 @@
             </a>
             <div class="dropdown2">
                 <button onclick="dropdownMenu()" class="dropbtn2">Om</button>
-                <div id="myDropdown2" class="dropdown-content2">
-                    <a href="om_vaerksted.html">Værksted</a>
-                    <a href="om_butik.html">Butik</a>
-
-                </div>
+                <div id="myDropdown2" class="dropdown-content2"> <a href="om_vaerksted.html">Værksted</a> <a href="om_butik.html">Butik</a> </div>
             </div>
         </nav>
-
     </header>
-
-
-
-
-
     <article class="slogan">
-        <h2 data-slogan></h2>
-    </article>
-
-
-    <article class="w3-content w3-display-container"> <a href="produkter.html"><img data-billede class="mySlides" src="#" alt="" style="width:100%"></a> <a href="om_vaerksted.html"><img data-billede2 class="mySlides" src="#" alt="" style="width:100%"></a> <a href="produkter.html"><img data-billede3 class="mySlides" src="#" alt="" style="width:100%"></a> <a href="om_butik.html"><img data-billede4 class="mySlides" src="#" alt="" style="width:100%"></a> <a href="projekter.html"><img data-billede5 class="mySlides" src="#" alt="" style="width:100%"></a>
+        <h2 data-slogan></h2> </article>
+    <article class="w3-content w3-display-container">
+        <a href="produkter.html"><img data-billede class="mySlides" src="#" alt="" style="width:100%"></a>
+        <a href="om_vaerksted.html"><img data-billede2 class="mySlides" src="#" alt="" style="width:100%"></a>
+        <a href="produkter.html"><img data-billede3 class="mySlides" src="#" alt="" style="width:100%"></a>
+        <a href="om_butik.html"><img data-billede4 class="mySlides" src="#" alt="" style="width:100%"></a>
+        <a href="projekter.html"><img data-billede5 class="mySlides" src="#" alt=""></a>
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </article>
-
     <footer class="footer">
         <div class="line"></div>
         <div class="footerWrapper">
@@ -81,7 +66,6 @@
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
-
         let time = setInterval(auto, 4000, n = 1);
 
         function plusDivs(n) {
@@ -89,7 +73,6 @@
         }
 
         function showDivs(n) {
-
             var i;
             var x = document.getElementsByClassName("mySlides");
             if (n > x.length) {
@@ -108,19 +91,12 @@
             // var n = 1;
             console.log("jhkjh");
             showDivs(slideIndex += n);
-
         }
-
     </script>
     <script src="hentJsonForside.js"></script>
     <script src="hentJsonFootHead.js"></script>
     <script src="dropdownmenu.js"></script>
     <script src="dropdown.js"></script>
-
-
-
-
-
 </body>
 
 </html>
