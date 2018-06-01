@@ -4,34 +4,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Made By Anders</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Raleway|Yantramanav" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
 
-<body>
+<body id="produkter">
     <header class="header">
 
-        <a href="index.html"><img data-logo class="logo" src="" alt=""></a>
+        <a href="index.html"><img data-logo class="logo" src="#" alt=""></a>
 
         <div class="burgerMenu">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">
+                <div onclick="myFunction()" class="dropbtn">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-                </button>
+                </div>
                 <div id="myDropdown" class="dropdown-content"> <a href="produkter.html">Produkter</a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om KnAsT Butik</a> </div>
             </div>
         </div>
 
 
         <nav class="navigation">
-            <a href="projekter.html"><button class="menu">Projekter</button></a>
-            <a href="produkter.html"><button class="menu">Produkter</button></a>
+            <a href="projekter.html">
+                <div class="menu">Projekter</div>
+            </a>
+            <a href="produkter.html">
+                <div class="menu">Produkter</div>
+            </a>
             <div class="dropdown2">
                 <button onclick="dropdownMenu()" class="dropbtn2">Om</button>
                 <div id="myDropdown2" class="dropdown-content2">
@@ -43,7 +50,6 @@
         </nav>
 
     </header>
-
     <nav id="filter">
         <button class="alle" onclick="alle()">Alle</button>
         <button class="spiseborde" onclick="visSpiseborde()">Spiseborde</button>
@@ -62,7 +68,8 @@
             </section>
         </div>
 
-        <section id="displayFarveskift">
+
+        <section id="displayFarveskift" class="filterDiv">
             <template id="farveskriftTemplate">
         <article class="farveskift">
             <h3 data-overskriftFarveskift></h3>
@@ -105,9 +112,9 @@
 
 
     <template id="spisebordTemplate">
-            <article class="spisebordeWrapper">
-               <h3 id="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
-                <img data-billedeSpisebord src="" alt="" style="width: 100%"></div>
+            <article class="spisebordeWrapper filterDiv">
+               <h3 class="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
+                <img data-billedeSpisebord src="#" alt="" style="width: 100%"></div>
                 <details closed>
                 <summary data-omSpisebord></summary>
                 <p data-spisebord_beskrivelse></p>
@@ -118,9 +125,9 @@
 
 
     <template id="sofabordTemplate">
-                    <article class="sofabordeWrapper">
-                       <h3 id="overskrift" data-overskriftSofabord></h3>
-                        <div class="imgContainerSofa"><img data-billedeSofabord src="" alt="" style="width: 100%"></div>
+                    <article class="sofabordeWrapper filterDiv">
+                       <h3 class="overskrift" data-overskriftSofabord></h3>
+                        <div class="imgContainerSofa"><img data-billedeSofabord src="#" alt="" style="width: 100%"></div>
                         <details closed>
                         <summary data-omSofabord></summary>
                         <p data-sofabord_beskrivelse></p>
@@ -129,9 +136,9 @@
     </template>
 
     <template id="hyldeTemplate">
-            <article class="hylderWrapper">
-               <h3 id="overskrift" data-overskriftHylde></h3>
-                <div class="imgContainerHylde"><img data-billedeHylde src="" alt="" style="width: 100%"></div>
+            <article class="hylderWrapper filterDiv">
+               <h3 class="overskrift" data-overskriftHylde></h3>
+                <div class="imgContainerHylde"><img data-billedeHylde src="#" alt="" style="width: 100%"></div>
                 <details closed>
                 <summary data-omHylde></summary>
                 <p data-hylde_beskrivelse></p>
@@ -150,8 +157,8 @@
                 <p data-aabningstider></p>
             </div>
             <div class="someWrapper">
-                <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="" alt="" class="fb_logo"></a>
-                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="" alt="" class="ins_logo"></a>
+                <a href="https://www.facebook.com/stefansgade3/"><img data-fbLogo src="#" alt="" class="fb_logo"></a>
+                <a href="https://www.instagram.com/madebyanders/"><img data-insLogo src="#" alt="" class="ins_logo"></a>
             </div>
         </div>
     </footer>
@@ -163,6 +170,7 @@
     <script src="hentJsonProdukter.js"></script>
     <script src="dropdownmenu.js"></script>
     <script src="dropdown.js"></script>
+    <!--<script src="sortering2.js"></script>-->
 
 
 </body>

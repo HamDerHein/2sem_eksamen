@@ -21,7 +21,7 @@ async function farveskfit() {
     document.getElementById("kasse7").addEventListener("click", show_graa);
     document.getElementById("kasse8").addEventListener("click", show_sort);
     document.getElementById("kasse9").addEventListener("click", show_lysGraa);
-    let mySvg = await fetch("img/farveSkiftBord.svg");
+    let mySvg = await fetch("img/sofabordFarver.svg");
     let svg = await mySvg.text();
     document.querySelector("#farveskift").innerHTML = svg;
 

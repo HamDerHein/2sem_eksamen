@@ -12,7 +12,10 @@ function alle() {
     document.querySelector(".hyldeWrapper").style.height = "auto";
 }
 
+
 function visSpiseborde() {
+
+    alle();
 
     console.log("vis spiseborde");
     document.querySelector(".spisebordWrapper").style.visibility = "visible";
@@ -28,6 +31,8 @@ function visSpiseborde() {
 
 function visSofaborde() {
 
+    alle();
+
     console.log("vis sofaborde");
     document.querySelector(".spisebordWrapper").style.visibility = "hidden";
     document.querySelector(".spisebordWrapper").style.height = "0px";
@@ -41,7 +46,9 @@ function visSofaborde() {
 
 function visHylder() {
 
-    console.log("vis sofaborde");
+    alle();
+
+    console.log("vis hylder");
     document.querySelector(".spisebordWrapper").style.visibility = "hidden";
     document.querySelector(".spisebordWrapper").style.height = "0px";
     document.querySelector(".sofabordWrapper").style.visibility = "hidden";

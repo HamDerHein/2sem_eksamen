@@ -69,7 +69,7 @@ summary {
 .dropdown-content2 a {
     margin-left: -10px;
     font-size: 1.2em;
-    font-family: Hind Vadodara;
+    font-family: "Hind Vadodara";
 }
 
 .dropdown-content2 a {
@@ -154,7 +154,7 @@ summary {
 }
 
 #farveskift {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -186,9 +186,13 @@ summary {
     height: 70px;
 }
 
-.navigation button {
+.navigation .menu {
     font-size: 1.1em;
-    font-family: Hind Vadodara;
+    font-family: "Hind Vadodara";
+}
+
+.navigation a {
+    text-decoration: none;
 }
 
 dropbtn {
@@ -203,6 +207,7 @@ dropbtn {
 
 .menu {
     text-align: center;
+    padding-top: 22px;
 }
 
 
@@ -269,7 +274,6 @@ dropbtn {
     text-align: right;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 2);
 }
 
 
@@ -320,8 +324,8 @@ dropbtn {
 
 .kontaktWrapper {
     margin-left: 15px;
-    font-family: Raleway Light;
-    font-size: 0.5em;
+    font-family: "Raleway Light";
+    font-size: 0.8em;
     width: 60%;
 }
 
@@ -332,6 +336,7 @@ dropbtn {
 
 .w3-display-container {
     width: 100vw;
+    cursor: pointer;
 }
 
 .mySlides {
@@ -342,18 +347,25 @@ dropbtn {
     width: 100%;
     text-align: left;
     margin: auto;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+
+
 }
 
 .slogan h2 {
     font-style: italic;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 .w3-black {
     background-color: #a5c5b4 !important;
+}
+
+.w3-display-left,
+.w3-display-right {
+    color: #111 !important;
 }
 
 
@@ -371,11 +383,14 @@ dropbtn {
     width: 80vw;
     height: 30vh;
     margin: 0 10vw;
+    border: none;
+
 }
 
 .projekter_billede {
-    width: 90vw;
-    margin: 5px 5vw;
+    width: 80vw;
+    margin: 10px 10vw;
+    margin-top: 30px;
 }
 
 
@@ -389,6 +404,7 @@ dropbtn {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 10vw;
+    border: none;
 }
 
 .omVaerstedTekst {
@@ -471,12 +487,13 @@ dropbtn {
     background-color: #a5c5b4;
     color: #111;
     padding: 0px 4px;
-    font-size: 10px;
+    font-family: "Hind Vadodara";
+    font-size: 14px;
     border: none;
     cursor: pointer;
-    width: 25vw;
+    width: 24.85vw;
     height: 35px;
-    margin: 40px -2px 0px -2px;
+    margin: 40px -2px 0px -4px;
 }
 
 
@@ -519,10 +536,19 @@ summary {
 */
 }
 
-#overskrift {
+.overskrift {
 
     margin-bottom: 5px;
     margin-top: 30px;
+}
+
+#produkter .footer {
+
+    margin-top: 10px;
+    /*
+    position: absolute;
+    bottom: -649px;
+*/
 }
 
 
@@ -544,13 +570,13 @@ summary {
 */
     .fb_logo,
     .ins_logo {
-        width: 25%;
+        width: 11%;
         margin: 15px 20px;
         cursor: pointer;
     }
     .someWrapper {
-        margin-left: 5%;
-        margin-top: 40px;
+        margin-left: 20%;
+        margin-top: 0px;
     }
     .slogan {
         width: 100%;
@@ -604,7 +630,7 @@ summary {
     #farveskift {
 
         margin-top: 0px;
-        margin-bottom: 65px;
+        margin-bottom: 0px;
     }
     /*
     .navigation {
@@ -620,9 +646,13 @@ summary {
         margin-top: 110px;
     }
 */
-    /*LABTOP*/
-    @media screen and (min-width:1024px) {
-        /*
+}
+
+
+/*LABTOP*/
+
+@media screen and (min-width:1024px) {
+    /*
     .produktWrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -630,51 +660,51 @@ summary {
 
     }
 */
-        .fb_logo,
-        .ins_logo {
-            width: 20%;
-            margin: 15px 20px;
-            cursor: pointer;
-        }
-        .someWrapper {
-            margin-left: 60%;
-        }
-        .slogan h2 {
-            font-size: 1.8em;
-            font-style: italic;
-        }
-        .presentVideo {
-            height: 50vh;
-        }
-        .lilleTekstWrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        #displaySpiseborde {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 2em;
-        }
-        #displaySofaborde {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 2em;
-        }
-        #displayHylder {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            width: 100%;
-            grid-gap: 2em;
-        }
-        #overskrift {
-            height: 65px;
-            text-align: center;
-        }
-        .farveskift h3,
-        .overskrift {
-            text-align: center;
-        }
-        /*
+    .fb_logo,
+    .ins_logo {
+        width: 20%;
+        margin: 15px 20px;
+        cursor: pointer;
+    }
+    .someWrapper {
+        margin-left: 60%;
+    }
+    .slogan h2 {
+        font-size: 1.8em;
+        font-style: italic;
+    }
+    .presentVideo {
+        height: 50vh;
+    }
+    .lilleTekstWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #displaySpiseborde {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+    #displaySofaborde {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+    #displayHylder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        grid-gap: 2em;
+    }
+    .overskrift {
+        height: 65px;
+        text-align: center;
+    }
+    .farveskift h3,
+    .overskrift {
+        text-align: center;
+    }
+    /*
         .imgContainer {
             height: 440px;
         }
@@ -685,88 +715,96 @@ summary {
             height: 315px;
         }
 */
+    /*
         .farveskift summary {
             margin-top: 65px;
 
         }
-        /*        .imgContainerHylde {
+*/
+    /*        .imgContainerHylde {
             height: 640px;
         }
 */
-        .vrVideo {
-            height: 500px;
-            width: 60%;
-            margin-left: 20%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .vrVideo {
+        height: 500px;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-        .produktWrapper details {
-            margin: 0 auto;
-        }
-
-
-        .spisebordWrapper {
-
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-
-        .sofabordWrapper {
-
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        .spisebordeWrapper {
-            border-style: none;
-        }
-
-        .sofabordeWrapper {
-            border-bottom-style: none;
-        }
-        .hylderWrapper {
-            border-style: none;
-        }
-        .farveskift {
-            border-style: none;
-        }
-
-        #googleMaps {
-            width: 70%;
-        }
-
-
-        .navigation {
-            visibility: visible;
-            margin-top: -83px;
-        }
-
-        .burgerMenu {
-            visibility: hidden;
-        }
-
-        .header {
-
-            margin-bottom: 40px;
-        }
+    .produktWrapper details {
+        margin: 0 auto;
     }
 
 
-    /*STOR SKÆRM*/
-    @media screen and (min-width:1440px) {
-        .presentVideo {
-            margin: 10vh 20vw;
-            margin-top: 10vh;
-            height: 60vh;
-            width: 60vw;
-        }
-        .vrVideo {
-            height: 500px;
-            width: 40%;
-            margin-left: 30%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .spisebordWrapper {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
+
+
+    .sofabordWrapper {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .spisebordeWrapper {
+        border-style: none;
+    }
+
+    .sofabordeWrapper {
+        border-bottom-style: none;
+    }
+    .hylderWrapper {
+        border-style: none;
+    }
+    .farveskift {
+        border-style: none;
+        margin-top: 20px;
+    }
+
+    #googleMaps {
+        width: 70%;
+    }
+
+
+    .navigation {
+        visibility: visible;
+        margin-top: -83px;
+    }
+
+    .burgerMenu {
+        visibility: hidden;
+    }
+
+    .header {
+
+        margin-bottom: 40px;
+    }
+
+    .kontaktWrapper {
+
+        font-size: 1em;
+    }
+}
+
+/*STOR SKÆRM*/
+
+@media screen and (min-width:1440px) {
+    .presentVideo {
+        margin: 10vh 20vw;
+        margin-top: 10vh;
+        height: 60vh;
+        width: 60vw;
+    }
+    .vrVideo {
+        height: 500px;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
