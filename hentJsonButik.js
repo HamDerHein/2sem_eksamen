@@ -10,5 +10,7 @@ async function hentJsonOmButik() {
     document.querySelector("[data-lilleTekst2]").innerHTML = butik.acf.butik_lilletekst2;
     document.querySelector("[data-lilleTekst3]").innerHTML = butik.acf.butik_lilletekst3;
     document.querySelector("[data-lilleTekst4]").innerHTML = butik.acf.butik_lilletekst4;
+    document.querySelector("[data-butikVideo_overskrift]").textContent = butik.acf.video_overskrift;
+    document.querySelector("[data-butikVideo_beksrivelse]").innerHTML = butik.acf.video_beskrivelse;
 
 }
