@@ -325,7 +325,7 @@ dropbtn {
 .kontaktWrapper {
     margin-left: 15px;
     font-family: "Raleway Light";
-    font-size: 0.8em;
+    font-size: 0.5em;
     width: 60%;
 }
 
@@ -420,17 +420,62 @@ dropbtn {
     grid-template-rows: 2fr;
 }
 
+/*
 .formular_send {
     margin-left: 30vw;
 }
 
 .formular_navn {
-    height: 30px
+    height: 30px;
+    width: 20%;
 }
 
 .formular_email {
     height: 30px;
+    width: 20%;
 }
+
+.formular_besked {
+    width: 20%;
+}*/
+
+#wpform-field-hp {
+    visibility: hidden;
+}
+
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100px;
+
+}
+
+
+.wpforms-field-medium {
+
+    width: 150px;
+}
+
+
+textarea {
+    height: 70px;
+
+}
+
+.wpforms-container {
+    margin-left: -25px
+}
+
+.wpforms-field-required {
+    width: 80%
+}
+
+
+
+
 
 
 /* OM VÆRKSTED SLUT */
@@ -446,7 +491,7 @@ dropbtn {
 
 .lilleTekstWrapper p {
 
-    width: 80vw;
+    width: 40vw;
 }
 
 .lilleTekstWrapper .email {
@@ -561,13 +606,11 @@ summary {
     .produkt_billede {
         width: 60%;
     }
-    /*
-    .produktWrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+
+    .kontaktWrapper {
+        font-size: 0.8em;
     }
-*/
+
     .fb_logo,
     .ins_logo {
         width: 11%;
@@ -646,6 +689,42 @@ summary {
         margin-top: 110px;
     }
 */
+    input,
+    select,
+    textarea {
+        font: inherit;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100px;
+
+    }
+
+
+    .wpforms-field-medium {
+
+        width: 150px;
+    }
+
+
+    textarea {
+        height: 70px;
+
+    }
+
+    .wpforms-container {
+        margin-left: -10px
+    }
+
+    .wpforms-field-required {
+        width: 100%
+    }
+
+
+
+
+
+
+
 }
 
 
