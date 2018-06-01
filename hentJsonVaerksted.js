@@ -7,5 +7,9 @@ async function hentJsonOmVaerksted() {
     document.querySelector("[data-360video]").src = vaerksted.acf.vr_video;
     document.querySelector("[data-vaerksted_tekst]").innerHTML = vaerksted.acf.vaerksted_tekst1;
     document.querySelector("[data-bestillingsmenu]").innerHTML = vaerksted.acf.bestillingsmenu;
-//    document.querySelector("[data-vaerksted_tekst2]").textContent = vaerksted.acf.vaerksted_tekst2;
+    document.querySelector("[data-kontaktOverskrift]").innerHTML = vaerksted.acf.kontaktoverskrift;
+    document.querySelector("[data-kontaktBeskrivelse]").innerHTML = vaerksted.acf.kontaktbeksrivelse;
+
+
+    //    document.querySelector("[data-vaerksted_tekst2]").textContent = vaerksted.acf.vaerksted_tekst2;
 }
