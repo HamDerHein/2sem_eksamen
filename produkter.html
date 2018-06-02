@@ -62,11 +62,7 @@
 
 
 
-        <div class="spisebordWrapper">
-            <section id="displaySpiseborde">
 
-            </section>
-        </div>
 
 
         <section id="displayFarveskift" class="filterDiv">
@@ -106,22 +102,13 @@
 
             </section>
         </div>
+        <div class="spisebordWrapper">
+            <section id="displaySpiseborde">
 
+            </section>
+        </div>
 
     </section>
-
-
-    <template id="spisebordTemplate">
-            <article class="spisebordeWrapper filterDiv">
-               <h3 class="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
-                <img data-billedeSpisebord src="#" alt="" style="width: 100%"></div>
-                <details closed>
-                <summary data-omSpisebord></summary>
-                <p data-spisebord_beskrivelse></p>
-            </details>
-            </article>
-    </template>
-
 
 
     <template id="sofabordTemplate">
@@ -147,7 +134,16 @@
     </template>
 
 
-
+    <template id="spisebordTemplate">
+            <article class="spisebordeWrapper filterDiv">
+               <h3 class="overskrift" data-overskriftSpisebord></h3><div class="imgContainer">
+                <img data-billedeSpisebord src="#" alt="" style="width: 100%"></div>
+                <details closed>
+                <summary data-omSpisebord></summary>
+                <p data-spisebord_beskrivelse></p>
+            </details>
+            </article>
+    </template>
 
     <footer class="footer">
         <div class="line"></div>
