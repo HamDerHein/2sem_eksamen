@@ -422,14 +422,23 @@ summary {
 
 /* FORSIDE START */
 
+.bgContainer {
+
+    background-color: #ecece7;
+}
+
+
+
 .w3-display-container {
     margin: 0;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .mySlides {
     width: 100% !important;
     box-shadow: 2px 1px 20px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
     /*
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -805,6 +814,7 @@ bottom: -649px;
     .w3-display-container {
         margin: 0;
         cursor: pointer;
+        margin-bottom: 50px;
     }
     .dropbtn {
         color: #d4b6b9;
@@ -850,7 +860,7 @@ bottom: -649px;
         margin-left: 15vw;
     }
     #filter button {
-        width: 10vw;
+        width: 13vw;
     }
     .fb_logo,
     .ins_logo {
@@ -1099,9 +1109,9 @@ height: 640px;
 }
 */
     .vrVideo {
-        height: 500px;
-        width: 60%;
-        margin-left: 20%;
+        height: 450px;
+        width: 80%;
+        margin-left: 10%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -1143,7 +1153,7 @@ height: 640px;
     }
 
     #filter button {
-        width: 10vw;
+        width: 20vw;
     }
     #navigation {
         justify-content: center;
@@ -1160,11 +1170,16 @@ height: 640px;
 
     }
     .butikVideo {
-        height: 500px;
-        width: 40%;
-        margin-left: 30%;
+        height: 430px;
+        width: 80%;
+        margin-left: 10%;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .projektVideo {
+
+        height: 450px;
     }
 }
 
