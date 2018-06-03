@@ -7,15 +7,25 @@
     <title>Made By Anders</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <!--FONTS START-->
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+
+    <!--FONTS SLUT-->
+    <!--FAV IKON START-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> </head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<!--FAV IKON SLUT-->
 
 <body>
+    <!--NAV START-->
     <header class="header">
+        <!--LOGO START-->
         <a href="index.html"><img data-logo class="logo" src="#" alt=""></a>
+        <!--LOGO SLUT-->
+        <!--BURGERMENU START-->
         <div class="burgerMenu">
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">
@@ -23,15 +33,18 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                <div id="myDropdown" class="dropdown-content"> <a href="produkter.html">Produkter</a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om KnAsT Butik</a> </div>
+                <div id="myDropdown" class="dropdown-content"> <a href="produkter.html"><span>Produkter</span></a> <a href="projekter.html">Projekter</a> <a href="om_vaerksted.html">Om Værkstedet</a> <a href="om_butik.html">Om Butik</a> </div>
             </div>
         </div>
-        <nav class="navigation">
+        <!--BURGERMENU SLUT-->
+
+        <!--NORMAL MENU START-->
+        <nav id="navigation">
             <a href="projekter.html">
-                <div class="menu">Projekter</div>
+                <div class="menu1">Projekter</div>
             </a>
             <a href="produkter.html">
-                <div class="menu">Produkter</div>
+                <div class="menu2">Produkter</div>
             </a>
             <div class="dropdown2">
                 <button onclick="dropdownMenu()" class="dropbtn2">Om</button>
@@ -39,18 +52,51 @@
             </div>
         </nav>
     </header>
-    <article class="slogan">
-        <h2 data-slogan></h2>
-    </article>
-    <article class="w3-content w3-display-container">
-        <a href="produkter.html"><img data-billede class="mySlides" src="#" alt="" style="width:100%"></a>
-        <a href="om_vaerksted.html"><img data-billede2 class="mySlides" src="#" alt="" style="width:100%"></a>
+    <!--NORMAL MENU SLUT-->
+    <!-- NAV SLUT-->
+
+
+    <!--
+<article class="slogan">w3-animate-fading
+    <h2 data-slogan></h2>
+</article>
+-->
+
+    <!-- SLIDESHOW START-->
+    <div class="w3-content w3-display-container">
+        <a href="produkter.html">
+            <div class="w3-display-container mySlides">
+                <img data-billede src="#" alt="" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                    <p id="slidetekstboks">Se vores udvalg af produkter</p>
+                </div>
+            </div>
+        </a>
+        <a href="produkter.html">
+            <div class="w3-display-container mySlides">
+                <img data-billede2 src="#" alt="" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                    <p id="slidetekstboks">Prøv vores 360&#176; rundtur i værkstedet</p>
+                </div>
+            </div>
+        </a>
+
         <a href="produkter.html"><img data-billede3 class="mySlides" src="#" alt="" style="width:100%"></a>
         <a href="om_butik.html"><img data-billede4 class="mySlides" src="#" alt="" style="width:100%"></a>
         <a href="projekter.html"><img data-billede5 class="mySlides" src="#" alt=""></a>
+
+
+
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    </article>
+    </div>
+
+    <!-- SLIDESHOW SLUT-->
+
+    <!-- CONTENT START-->
+    <!-- CONTENT SLUT-->
+
+    <!-- FOOTER START-->
     <footer class="footer">
         <div class="line"></div>
         <div class="footerWrapper">
@@ -64,40 +110,15 @@
             </div>
         </div>
     </footer>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        let time = setInterval(auto, 8000, n = 1);
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
+    <!-- FOOTER SLUT-->
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-
-        function auto() {
-            // var n = 1;
-            console.log("jhkjh");
-            showDivs(slideIndex += n);
-        }
-    </script>
-    <script src="hentJsonForside.js"></script>
-    <script src="hentJsonFootHead.js"></script>
     <script src="dropdownmenu.js"></script>
     <script src="dropdown.js"></script>
+    <script src="hentJsonForside.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="hentJsonFootHead.js"></script>
+
 </body>
 
 </html>

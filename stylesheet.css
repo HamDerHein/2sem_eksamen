@@ -7,55 +7,72 @@ body {
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
     /*    background-color: #efe1d3;*/
+    min-width: 300px;
+    max-width: 415px;
+    /*    padding: 2em 2em 1em 2em;
+    */
 }
 
 
-/*FONTS START */
+/* FONTS START */
 
 p {
-    font-family: Raleway, light;
-    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000000;
 }
 
 h3 {
-    font-family: Hind Vadodara, bold;
-    font-size: 1.8em;
+    font-family: 'Hind Vadodara', sans-serif, bold;
+    font-size: 1.8em,
 }
 
 summary {
-    font-family: Raleway, Light;
-    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
 }
 
+#slidetekstboks {
+    text-align: center;
+    font-size: 0.8em !important;
+}
 
-/*FONTS START */
-
+/*FONTS SLUT*/
 
 /*DROPDOWN MENU START */
 
 .dropbtn2,
-.menu {
-    background-color: #f7efe8;
-    color: #111;
+.menu1,
+.menu2 {
+    background-color: #a5c5b4;
+    color: #000000;
     padding: 8px 4px;
-    font-size: 14px;
+    /*    font-size: 1.2em; styrer kom om i desktop? */
     border: none;
     cursor: pointer;
     width: 95px;
     height: 70px;
     margin: 0 0px;
+    box-shadow: 0px 0px 1px 0px #3d3d3d;
+
 }
 
+/*
 .dropbtn2:hover,
 .dropbtn2:focus,
 .menu:hover,
 .menu:focus {
     background-color: #a5c5b4;
 }
+*/
 
 .dropdown2 {
     position: relative;
     display: inline-block;
+    box-shadow: 0px 0px 1px 0px #3d3d3d;
+
 }
 
 .dropdown-content2 {
@@ -64,16 +81,25 @@ summary {
     background-color: #a5c5b4;
     max-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 300;
     margin-left: -3px;
     width: 120px;
+    right: 0;
+
+    min-width: 200px;
 }
 
 .dropdown-content2 a {
     margin-left: -10px;
-    font-size: 1.2em;
-    font-family: "Hind Vadodara";
+    font-family: 'Hind Vadodara', sans-serif;
+    text-align: right;
+    color: #000000;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 1em;
+    box-shadow: 0px 0px 1px 0px #3d3d3d;
 }
 
 .dropdown-content2 a {
@@ -83,22 +109,190 @@ summary {
     display: block;
 }
 
-.dropdown2 a:hover {
-    background-color: #ddd
-}
 
 .show2 {
     display: block;
 }
 
-.navigation {
+#navigation {
     visibility: hidden;
-    font-family: Hind Vadodara, Bold;
+    font-family: 'Hind Vadodara', sans-serif, bold;
+    box-shadow: 0px 0px 1px 0px #3d3d3d;
+
 }
 
 
 /*DROPDOWN MENU SLUT */
 
+/* HEADER START */
+
+.header {
+    margin-top: 15px;
+    background-color: #a5c5b4;
+}
+
+.headerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+}
+
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+
+#navigation .menu1,
+.menu2 {
+    font-size: 1.1em;
+    font-family: 'Hind Vadodara';
+}
+
+#navigation a {
+    text-decoration: none;
+
+}
+
+dropbtn {
+    padding-right: 5px;
+}
+
+.logo {
+    width: 170px;
+    margin-left: 10px;
+    margin-top: 5px
+}
+
+.menu1,
+.menu2 {
+    text-align: center;
+    padding-top: 22px;
+    border: 3px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #111;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg)translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg)translate(-8px, -8px);
+}
+
+.dropbtn {
+    color: #d4b6b9;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    float: right;
+    display: inline-block;
+    margin-top: -155px;
+    margin-right: 15.5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a5c5b4;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px #3d3d3d;
+    right: 0;
+    margin-right: 32px;
+    z-index: 300;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    box-shadow: 0px 0px 1px 0px #3d3d3d;
+
+}
+
+.show {
+    display: block;
+}
+
+/*FREDERIKS HOVER*/
+
+.header span:hover {
+    border-bottom: 1.8px solid #dab693;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+    color: #dab693;
+    /* Styrer dropdownmenu teksten hoverfarve & underline*/
+}
+
+.dropdown-content a:hover,
+.dropdown-content2 a:hover,
+.dropdown2:hover {
+    background-color: rgba(30, 63, 89, 0.50);
+    /* Styrer dropdownmenuknappen hoverfarven*/
+}
+
+#menu1menu2active:hover,
+.menu1:hover,
+.menu2:hover,
+.dropbtn2:hover {
+    background-color: rgba(30, 63, 89, 0.50);
+    /* Styrer Desktopmenuknappernes hoverfarven*/
+}
+
+#omactive:hover {
+
+    background-color: rgba(30, 63, 89, 0.50;
+    )
+    /* Styrer Desktopmenuknappernes hoverfarven*/
+}
+
+.desktopvaerkstedactive,
+.desktopbutikactive,
+.produkteractive,
+.projekteractive,
+.vaerkstedactive,
+.butikactive {
+    /* Styrer farven. Hvilken side du er på (homesiden.) */
+    background-color: rgba(30, 63, 89, 0.20);
+}
+
+#menu1menu2active,
+#omactiveom {
+    background-color: rgba(30, 63, 89, 0.20);
+    /* Styrer farven. Hvilken side du er på (homesiden.) */
+}
+
+
+
+
+
+/*FREDERIKS HOVER*/
+
+/* HEADER SLUT */
 
 /* SOFABORD BORDPLADE SKIFT FARVE START */
 
@@ -165,130 +359,17 @@ summary {
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
 
-
-/* HEADER START */
-
-.header {
-    margin-bottom: -85px;
-    background-color: #a5c5b4;
-}
-
-.headerWrapper {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 10px;
-}
-
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-    height: 70px;
-}
-
-.navigation .menu {
-    font-size: 1.1em;
-    font-family: "Hind Vadodara";
-    background-color: #f7efe8;
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-dropbtn {
-    padding-right: 5px;
-}
-
-.logo {
-    width: 170px;
-    margin-left: 10px;
-    margin-top: 5px
-}
-
-.menu {
-    text-align: center;
-    padding-top: 22px;
-    border: 3px;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #111;
-    margin: 6px 0;
-    transition: 0.5s;
-}
-
-.change .bar1 {
-    transform: rotate(-45deg)translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    transform: rotate(45deg)translate(-8px, -8px);
-}
-
-.dropbtn {
-    color: #d4b6b9;
-    padding: 7px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-right: 30px;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #a5c5b4;
-}
-
-.dropdown {
-    float: right;
-    display: inline-block;
-    margin-top: -80px;
-    margin-right: 20px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #d4b6b9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px #3d3d3d;
-    right: 0;
-    z-index: 300;
-}
-
-.dropdown-content a {
-    background-color: #a5c5b4;
-    color: #111;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: right;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
-.show {
-    display: block;
-}
-
-
-/* HEADET SLUT */
-
-
 /* FOOTER START */
 
 .footer {
     margin-bottom: 0;
     background-color: #a5c5b4;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
 }
 
 .footerWrapper {
@@ -297,14 +378,14 @@ dropbtn {
     grid-gap: 10px;
 }
 
-.line {
-    width: 95vw;
-    height: 5px;
-    background-color: black;
+.kontaktWrapper {
+    margin-left: 15px;
+
 }
 
 .someWrapper {
-    margin-left: 30%;
+
+    margin-left: 15px;
 }
 
 .fb_logo,
@@ -314,24 +395,19 @@ dropbtn {
     cursor: pointer;
 }
 
-.kontaktWrapper {
-    margin-left: 15px;
-    width: 60%;
-}
-
 .kontaktWrapper p {
-    font-family: Hind Vadodara, Bold;
+    font-family: 'Hind Vadodara', sans-serif, bold;
     font-size: 1.2em;
 }
 
 
 /* FOOTER SLUT */
 
-
 /* FORSIDE START */
 
 .w3-display-container {
-    width: 100vw;
+
+    margin: 0;
     cursor: pointer;
 }
 
@@ -346,25 +422,7 @@ padding-right: 20px !important;
 */
 }
 
-.w3-display-right {
-    right: 4.4%;
-}
 
-.slogan {
-    /*
-width: 100%;
-text-align: left;
-margin: auto;
-display: flex;
-justify-content: center;
-margin-bottom: 10px;
-*/
-}
-
-.slogan h2 {
-    font-style: italic;
-    font-size: 1.8em;
-}
 
 .w3-black {
     background-color: #a5c5b4 !important;
@@ -375,9 +433,26 @@ margin-bottom: 10px;
     color: #111 !important;
 }
 
+/*
+
+.slogan {
+
+width: 100%;
+text-align: left;
+margin: auto;
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+
+}
+
+.slogan h2 {
+    font-style: italic;
+    font-size: 1.8em;
+}
+*/
 
 /* FORSIDE SLUT */
-
 
 /* PROJEKTER START */
 
@@ -402,7 +477,6 @@ margin-bottom: 10px;
 
 
 /* PROJEKTER SLUT */
-
 
 /* OM VÆRKSTED START */
 
@@ -429,7 +503,7 @@ margin-bottom: 10px;
 }
 
 .vaerkstedVideo_overskrift {
-    font-family: Hind Vadodara, Bold;
+    font-family: 'Hind Vadodara', sans-serif;
     font-size: 1.1em;
     text-align: center;
 }
@@ -503,7 +577,7 @@ textarea {
 }
 
 .butikVideo_overskrift {
-    font-family: Hind Vadodara, Bold;
+    font-family: 'Hind Vadodara', sans-serif, bold;
     font-size: 1.1em;
     text-align: center;
 }
@@ -525,7 +599,6 @@ textarea {
 
 
 /* OM VÆRKSTED SLUT */
-
 
 /* OM BUTIK START */
 
@@ -571,7 +644,6 @@ textarea {
 
 
 /* OM BUTIK SLUT */
-
 
 /* PRODUKTER START */
 
@@ -647,10 +719,22 @@ bottom: -649px;
 
 /* PRODUKTER SLUT */
 
-
 /*TABLET*/
 
-@media screen and (min-width:768px) {
+/*@media screen and (min-width:768px)*/
+
+/*@media screen and (max-width: 768px) and (min-width: 0px)*/
+
+@media screen and (max-width: 768px) and (min-width: 416px) {
+    body {
+        min-width: 416px;
+        max-width: 768px;
+    }
+    .w3-display-container {
+
+        margin: 0;
+        cursor: pointer;
+    }
     .produkt_billede {
         width: 60%;
     }
@@ -722,7 +806,7 @@ bottom: -649px;
         margin-bottom: 0px;
     }
     /*
-.navigation {
+#navigation {
 visibility: visible;
 margin-top: -83px;
 }
@@ -766,10 +850,9 @@ margin-top: 110px;
         width: 97.5vw !important;
     }
     .line {
-        width: 97.5vw;
-    }
-    .w3-display-left {
-        margin-left: 12px;
+        width: 100%;
+        height: 5px;
+        background-color: black;
     }
     .vrVideo {
         width: 60vw;
@@ -891,7 +974,7 @@ height: 640px;
     #googleMaps {
         width: 70%;
     }
-    .navigation {
+    #navigation {
         visibility: visible;
     }
     .burgerMenu {
@@ -911,12 +994,13 @@ height: 640px;
         width: 17vw;
         margin-left: 100px;
     }
-    .navigation {
+    #navigation {
         justify-content: center;
         background-color: #a5c5b4;
     }
     .dropbtn2,
-    .menu {
+    .menu1,
+    .menu2 {
         width: 200px;
     }
     .line {
@@ -929,13 +1013,8 @@ height: 640px;
     .w3-display-left {
         margin-left: 32px;
     }
-    .navigation .menu {
-        background-color: #a5c5b4;
-    }
-    .dropbtn2,
-    .menu {
-        background-color: #a5c5b4;
-    }
+
+
     .butikVideo {
         height: 500px;
         width: 40%;
@@ -974,13 +1053,14 @@ height: 640px;
         width: 17vw;
         margin-left: 200px;
     }
-    .navigation {
+    #navigation {
         justify-content: center;
         font-size: 1.2em;
         background-color: #a5c5b4;
     }
     .dropbtn2,
-    .menu {
+    .menu1,
+    .menu2 {
         width: 200px;
     }
     .dropbtn2 {
@@ -1006,13 +1086,8 @@ height: 640px;
     .header {
         background-color: #a5c5b4;
     }
-    .navigation .menu {
-        background-color: #a5c5b4;
-    }
-    .dropbtn2,
-    .menu {
-        background-color: #a5c5b4;
-    }
+
+
     .butikVideo {
         height: 500px;
         width: 40%;
