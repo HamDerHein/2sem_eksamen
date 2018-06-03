@@ -39,6 +39,12 @@ summary {
     font-size: 0.8em !important;
 }
 
+#slidetekstboks {
+    text-align: center;
+    font-size: 0.8em !important;
+
+}
+
 /*FONTS SLUT*/
 
 /*DROPDOWN MENU START */
@@ -59,14 +65,7 @@ summary {
 
 }
 
-/*
-.dropbtn2:hover,
-.dropbtn2:focus,
-.menu:hover,
-.menu:focus {
-    background-color: #a5c5b4;
-}
-*/
+
 
 .dropdown2 {
     position: relative;
@@ -154,14 +153,10 @@ summary {
 
 }
 
-dropbtn {
-    padding-right: 5px;
-}
-
 .logo {
     width: 170px;
     margin-left: 10px;
-    margin-top: 5px
+    margin-top: -25px
 }
 
 .menu1,
@@ -199,6 +194,7 @@ dropbtn {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 
@@ -217,7 +213,7 @@ dropbtn {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px #3d3d3d;
     right: 0;
-    margin-right: 32px;
+    margin-right: 28px;
     z-index: 300;
 }
 
@@ -384,20 +380,29 @@ dropbtn {
 }
 
 .someWrapper {
-
-    margin-left: 15px;
+    width: 75%;
+    margin-left: 30%;
+    margin-top: 5%;
 }
 
 .fb_logo,
 .ins_logo {
     width: 50%;
-    margin: 15px 0;
+    margin: 21px 0;
     cursor: pointer;
 }
 
-.kontaktWrapper p {
-    font-family: 'Hind Vadodara', sans-serif, bold;
-    font-size: 1.2em;
+.kontakt {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    border-bottom:
+}
+
+.aabningstider {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
 }
 
 
@@ -412,7 +417,7 @@ dropbtn {
 }
 
 .mySlides {
-    width: 95vw !important;
+    width: 100% !important;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
     /*
@@ -426,12 +431,15 @@ padding-right: 20px !important;
 
 .w3-black {
     background-color: #a5c5b4 !important;
+
 }
 
 .w3-display-left,
 .w3-display-right {
     color: #111 !important;
 }
+
+
 
 /*
 
@@ -481,7 +489,7 @@ margin-bottom: 10px;
 /* OM VÆRKSTED START */
 
 .omVaerstedVideo_tekst {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.9em;
     font-style: italic;
     margin: 0 auto;
@@ -490,7 +498,7 @@ margin-bottom: 10px;
 }
 
 .kontaktBeskrivelse {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.9em;
     font-style: italic;
     margin: 0 auto;
@@ -589,7 +597,7 @@ textarea {
 }
 
 .butikVideo_beksrivelse {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.9em;
     font-style: italic;
     margin: 0 auto;
@@ -655,7 +663,7 @@ textarea {
     background-color: #a5c5b4;
     color: #111;
     padding: 0px 4px;
-    font-family: Raleway, Light;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     border: none;
     cursor: pointer;
@@ -731,9 +739,45 @@ bottom: -649px;
         max-width: 768px;
     }
     .w3-display-container {
-
         margin: 0;
         cursor: pointer;
+    }
+    .dropbtn {
+        color: #d4b6b9;
+        padding: 7px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-top: -22px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #a5c5b4;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px #3d3d3d;
+        right: 0;
+        margin-right: 14px;
+        z-index: 300;
+    }
+    .show {
+        display: block;
+    }
+    .logo {
+        width: 250px;
+        margin-left: 10px;
+        margin-top: -35px;
+    }
+
+
+    .mySlides {
+        width: 100% !important;
+    }
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: black;
     }
     .produkt_billede {
         width: 60%;
@@ -746,9 +790,7 @@ bottom: -649px;
     #filter button {
         width: 10vw;
     }
-    .kontaktWrapper {
-        font-size: 0.8em;
-    }
+
     .fb_logo,
     .ins_logo {
         width: 21%;
@@ -756,8 +798,10 @@ bottom: -649px;
         cursor: pointer;
     }
     .someWrapper {
-        margin-left: 20%;
-        margin-top: 0px;
+        width: 100%;
+        margin-left: 4%;
+        margin-top: 8%;
+        display: inline-block;
     }
     .slogan {
         width: 100%;
@@ -839,21 +883,7 @@ margin-top: 110px;
     .wpforms-field-required {
         width: 100%
     }
-    .logo {
-        width: 25vw;
-    }
-    .footer {
-        font-size: 1.4em;
-        background-color: #a5c5b4;
-    }
-    .mySlides {
-        width: 97.5vw !important;
-    }
-    .line {
-        width: 100%;
-        height: 5px;
-        background-color: black;
-    }
+
     .vrVideo {
         width: 60vw;
         height: 30vw;
@@ -990,10 +1020,7 @@ height: 640px;
     #filter button {
         width: 10vw;
     }
-    .logo {
-        width: 17vw;
-        margin-left: 100px;
-    }
+
     #navigation {
         justify-content: center;
         background-color: #a5c5b4;
@@ -1049,10 +1076,7 @@ height: 640px;
         font-size: 1.1em;
         margin-left: 17vw;
     }
-    .logo {
-        width: 17vw;
-        margin-left: 200px;
-    }
+
     #navigation {
         justify-content: center;
         font-size: 1.2em;
