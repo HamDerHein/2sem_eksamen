@@ -125,7 +125,7 @@ summary {
 
 .header {
     margin-top: 15px;
-    background-color: #ecece7;
+
 }
 
 .headerWrapper {
@@ -138,6 +138,7 @@ summary {
     display: flex;
     justify-content: flex-end;
     height: 70px;
+
 }
 
 #navigation .menu1,
@@ -212,7 +213,6 @@ summary {
     display: none;
     position: absolute;
     background-color: #c3d7cd;
-    ;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px #3d3d3d;
@@ -426,12 +426,11 @@ summary {
 
 .mySlides {
     width: 100% !important;
-    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, .5);
     /*
-padding-right: 20px !important;
--moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
 */
 }
 
@@ -479,11 +478,25 @@ margin-bottom: 10px;
 }
 
 .presentVideo {
-    width: 80vw;
-    height: 30vh;
+    width: 80%;
+    height: auto;
     margin: 0 10vw;
     border: none;
+    max-width: 5000px;
+    position: relative;
+    margin: auto;
 }
+
+/*
+.presentVideo iframe {
+
+    width: 100%;
+    height: 300px;
+    margin: 64px auto;
+    padding: 2em 1em 2em 1em;
+    border: none;
+}
+*/
 
 .projekter_billede {
     width: 80vw;
@@ -807,9 +820,11 @@ bottom: -649px;
     .slogan {
         width: 100%;
     }
+    /*
     .presentVideo {
         height: 30vh;
     }
+*/
     .vrVideo {
         width: 100%;
         height: auto;
@@ -1095,9 +1110,7 @@ height: 640px;
 
     .mySlides {
         width: 100% !important;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
+
     }
     .butikVideo {
         height: 500px;
@@ -1178,12 +1191,14 @@ height: 640px;
         font-weight: 700;
         font-size: 2em;
     }
+    /*
     .presentVideo {
         margin: 10vh 20vw;
         margin-top: 10vh;
         height: 60vh;
         width: 60vw;
     }
+*/
     .vrVideo {
         height: 500px;
         width: 40%;
@@ -1199,7 +1214,6 @@ height: 640px;
     #navigation {
         justify-content: center;
         font-size: 1.2em;
-        background-color: #a5c5b4;
     }
     .dropbtn2,
     .menu1,
