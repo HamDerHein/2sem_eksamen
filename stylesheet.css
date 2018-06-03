@@ -231,6 +231,7 @@ summary {
 
 .show {
     display: block;
+    text-decoration-style: dashed;
 }
 
 
