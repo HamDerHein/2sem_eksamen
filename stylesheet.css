@@ -13,6 +13,11 @@ body {
     */
 }
 
+.slideshow-container {
+    max-width: 5000px;
+    position: relative;
+    margin: auto;
+}
 
 /* FONTS START */
 
@@ -46,7 +51,6 @@ summary {
 
 
 /*FONTS SLUT*/
-
 
 /*DROPDOWN MENU START */
 
@@ -116,7 +120,6 @@ summary {
 
 
 /*DROPDOWN MENU SLUT */
-
 
 /* HEADER START */
 
@@ -286,9 +289,7 @@ summary {
 
 /*FREDERIKS HOVER*/
 
-
 /* HEADER SLUT */
-
 
 /* SOFABORD BORDPLADE SKIFT FARVE START */
 
@@ -355,7 +356,6 @@ summary {
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
 
-
 /* FOOTER START */
 
 .footer {
@@ -376,7 +376,7 @@ summary {
 }
 
 .kontaktWrapper {
-    margin-left: 15px;
+    margin-left: 5%;
 }
 
 .someWrapper {
@@ -416,7 +416,6 @@ summary {
 
 
 /* FOOTER SLUT */
-
 
 /* FORSIDE START */
 
@@ -469,9 +468,7 @@ margin-bottom: 10px;
 }
 */
 
-
 /* FORSIDE SLUT */
-
 
 /* PROJEKTER START */
 
@@ -496,7 +493,6 @@ margin-bottom: 10px;
 
 
 /* PROJEKTER SLUT */
-
 
 /* OM VÆRKSTED START */
 
@@ -620,7 +616,6 @@ textarea {
 
 /* OM VÆRKSTED SLUT */
 
-
 /* OM BUTIK START */
 
 .lilleTekstWrapper {
@@ -665,7 +660,6 @@ textarea {
 
 
 /* OM BUTIK SLUT */
-
 
 /* PRODUKTER START */
 
@@ -741,14 +735,7 @@ bottom: -649px;
 
 /* PRODUKTER SLUT */
 
-
 /*TABLET*/
-
-
-/*@media screen and (min-width:768px)*/
-
-
-/*@media screen and (max-width: 768px) and (min-width: 0px)*/
 
 @media screen and (max-width: 768px) and (min-width: 416px) {
     body {
@@ -775,7 +762,7 @@ bottom: -649px;
         overflow: auto;
         box-shadow: 0px 8px 16px 0px #3d3d3d;
         right: 0;
-        margin-right: 14px;
+        margin-right: 25px;
         z-index: 300;
     }
     .show {
@@ -907,7 +894,7 @@ margin-top: 110px;
 
 /*LABTOP*/
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:769px) {
     /*
 .produktWrapper {
 display: grid;
@@ -917,6 +904,50 @@ grid-gap: 10px;
 }
 
 */
+    body {
+        min-width: 769px;
+        max-width: 1440px;
+    }
+    .w3-display-container {
+        margin: 0;
+        cursor: pointer;
+
+    }
+    .dropbtn {
+        color: #d4b6b9;
+        padding: 7px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-top: -22px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #a5c5b4;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px #3d3d3d;
+        right: 0;
+        margin-right: 14px;
+        z-index: 300;
+    }
+    .show {
+        display: block;
+    }
+    .logo {
+        width: 250px;
+        margin-left: 10px;
+        margin-top: -35px;
+    }
+    .mySlides {
+        width: 100% !important;
+    }
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: black;
+    }
     .fb_logo,
     .ins_logo {
         width: 20%;
@@ -924,8 +955,30 @@ grid-gap: 10px;
         cursor: pointer;
     }
     .someWrapper {
-        margin-left: 20vw;
-        width: 28vw;
+        width: 100%;
+        margin-left: 4%;
+        margin-top: 8%;
+        display: inline-block;
+    }
+    .kontaktWrapper {
+        margin-left: 5%;
+    }
+
+    .someWrapper {
+        width: 75%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    .kontakt {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .aabningstider {
+        font-family: 'Hind Vadodara', sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
     }
     .slogan h2 {
         font-size: 1.8em;
@@ -1026,10 +1079,7 @@ height: 640px;
     .header {
         margin-bottom: 40px;
     }
-    .kontaktWrapper {
-        font-size: 0.7em;
-        margin-left: 12vw;
-    }
+
     #filter button {
         width: 10vw;
     }
@@ -1042,15 +1092,12 @@ height: 640px;
     .menu2 {
         width: 200px;
     }
-    .line {
-        width: 90vw;
-        margin: 20px auto 0 auto;
-    }
+
     .mySlides {
         width: 100% !important;
-    }
-    .w3-display-left {
-        margin-left: 32px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
     }
     .butikVideo {
         height: 500px;
@@ -1065,6 +1112,72 @@ height: 640px;
 /*STOR SKÆRM*/
 
 @media screen and (min-width:1440px) {
+
+    body {
+        min-width: 1441px;
+        max-width: 3000px;
+    }
+    .w3-display-container {
+        margin: 0;
+        cursor: pointer;
+
+    }
+    .kontaktWrapper {
+        margin-left: 5%;
+    }
+
+    .someWrapper {
+        width: 75%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+    .dropbtn {
+        color: #d4b6b9;
+        padding: 7px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-top: -22px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #a5c5b4;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px #3d3d3d;
+        right: 0;
+        margin-right: 14px;
+        z-index: 300;
+    }
+    .show {
+        display: block;
+    }
+    .logo {
+        width: 250px;
+        margin-left: 10px;
+        margin-top: -35px;
+    }
+    .mySlides {
+        width: 100% !important;
+    }
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: black;
+    }
+    .kontakt {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+        border-bottom:
+    }
+
+    .aabningstider {
+        font-family: 'Hind Vadodara', sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+    }
     .presentVideo {
         margin: 10vh 20vw;
         margin-top: 10vh;
@@ -1082,10 +1195,7 @@ height: 640px;
         width: 15vw;
         font-size: 1.2em;
     }
-    .kontaktWrapper {
-        font-size: 1.1em;
-        margin-left: 17vw;
-    }
+
     #navigation {
         justify-content: center;
         font-size: 1.2em;
@@ -1099,26 +1209,9 @@ height: 640px;
     .dropbtn2 {
         font-size: 1.2em;
     }
-    .footer {
-        font-size: 1.1em;
-    }
-    .line {
-        width: 70vw;
-        margin: 20px auto 0 auto;
-    }
-    .someWrapper {
-        margin-left: 20vw;
-        width: 23vw;
-    }
-    .mySlides {
-        width: 100% !important;
-    }
-    .footer {
-        background-color: #a5c5b4;
-    }
-    .header {
-        background-color: #a5c5b4;
-    }
+
+
+
     .butikVideo {
         height: 500px;
         width: 40%;
