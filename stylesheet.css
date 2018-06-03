@@ -3,7 +3,7 @@ body {
     margin-bottom: 60px;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: #a5c5b4;
+    background-color: #c3d7cd;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
     /*    background-color: #efe1d3;*/
@@ -42,10 +42,11 @@ summary {
 #slidetekstboks {
     text-align: center;
     font-size: 0.8em !important;
-
 }
 
+
 /*FONTS SLUT*/
+
 
 /*DROPDOWN MENU START */
 
@@ -62,16 +63,12 @@ summary {
     height: 70px;
     margin: 0 0px;
     box-shadow: 0px 0px 1px 0px #3d3d3d;
-
 }
-
-
 
 .dropdown2 {
     position: relative;
     display: inline-block;
     box-shadow: 0px 0px 1px 0px #3d3d3d;
-
 }
 
 .dropdown-content2 {
@@ -84,7 +81,6 @@ summary {
     margin-left: -3px;
     width: 120px;
     right: 0;
-
     min-width: 200px;
 }
 
@@ -108,7 +104,6 @@ summary {
     display: block;
 }
 
-
 .show2 {
     display: block;
 }
@@ -117,17 +112,17 @@ summary {
     visibility: hidden;
     font-family: 'Hind Vadodara', sans-serif, bold;
     box-shadow: 0px 0px 1px 0px #3d3d3d;
-
 }
 
 
 /*DROPDOWN MENU SLUT */
 
+
 /* HEADER START */
 
 .header {
     margin-top: 15px;
-    background-color: #a5c5b4;
+    background-color: #ecece7;
 }
 
 .headerWrapper {
@@ -150,7 +145,6 @@ summary {
 
 #navigation a {
     text-decoration: none;
-
 }
 
 .logo {
@@ -195,8 +189,14 @@ summary {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: transform .2s;
 }
 
+.dropbtn:hover {
+    transform: scale(1.1);
+}
 
 .dropdown {
     float: right;
@@ -208,12 +208,13 @@ summary {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #a5c5b4;
+    background-color: #c3d7cd;
+    ;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px #3d3d3d;
     right: 0;
-    margin-right: 28px;
+    margin-right: 32px;
     z-index: 300;
 }
 
@@ -226,28 +227,29 @@ summary {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     box-shadow: 0px 0px 1px 0px #3d3d3d;
-
 }
 
 .show {
     display: block;
 }
 
+
 /*FREDERIKS HOVER*/
 
 .header span:hover {
-    border-bottom: 1.8px solid #dab693;
+    border-bottom: 1.8px solid #000000;
     cursor: pointer;
     transition: all 200ms ease-in;
     transform: scale(1.5);
-    color: #dab693;
+    color: #000000;
     /* Styrer dropdownmenu teksten hoverfarve & underline*/
 }
 
 .dropdown-content a:hover,
 .dropdown-content2 a:hover,
 .dropdown2:hover {
-    background-color: rgba(30, 63, 89, 0.50);
+    background-color: rgba(204, 215, 224, 0.65);
+    transition: all 200ms ease-in;
     /* Styrer dropdownmenuknappen hoverfarven*/
 }
 
@@ -260,7 +262,6 @@ summary {
 }
 
 #omactive:hover {
-
     background-color: rgba(30, 63, 89, 0.50;
     )
     /* Styrer Desktopmenuknappernes hoverfarven*/
@@ -283,12 +284,11 @@ summary {
 }
 
 
-
-
-
 /*FREDERIKS HOVER*/
 
+
 /* HEADER SLUT */
+
 
 /* SOFABORD BORDPLADE SKIFT FARVE START */
 
@@ -355,11 +355,12 @@ summary {
 
 /* SOFABORD BORDPLADE SKIFT FARVE SLUT */
 
+
 /* FOOTER START */
 
 .footer {
     margin-bottom: 0;
-    background-color: #a5c5b4;
+    background-color: #ecece7;
 }
 
 .line {
@@ -376,7 +377,6 @@ summary {
 
 .kontaktWrapper {
     margin-left: 15px;
-
 }
 
 .someWrapper {
@@ -388,8 +388,17 @@ summary {
 .fb_logo,
 .ins_logo {
     width: 50%;
-    margin: 21px 0;
+    margin: 15px 0;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+.ins_logo:hover {
+    transform: scale(1.1);
+}
+
+.fb_logo:hover {
+    transform: scale(1.1);
 }
 
 .kontakt {
@@ -408,10 +417,10 @@ summary {
 
 /* FOOTER SLUT */
 
+
 /* FORSIDE START */
 
 .w3-display-container {
-
     margin: 0;
     cursor: pointer;
 }
@@ -427,18 +436,18 @@ padding-right: 20px !important;
 */
 }
 
-
-
 .w3-black {
-    background-color: #a5c5b4 !important;
-
+    background-color: #c3d7cd !important;
 }
 
 .w3-display-left,
 .w3-display-right {
-    color: #111 !important;
+    color: #000000 !important;
 }
 
+.w3-display-middle {
+    opacity: 0.8;
+}
 
 
 /*
@@ -460,7 +469,9 @@ margin-bottom: 10px;
 }
 */
 
+
 /* FORSIDE SLUT */
+
 
 /* PROJEKTER START */
 
@@ -485,6 +496,7 @@ margin-bottom: 10px;
 
 
 /* PROJEKTER SLUT */
+
 
 /* OM VÆRKSTED START */
 
@@ -608,6 +620,7 @@ textarea {
 
 /* OM VÆRKSTED SLUT */
 
+
 /* OM BUTIK START */
 
 .lilleTekstWrapper {
@@ -652,6 +665,7 @@ textarea {
 
 
 /* OM BUTIK SLUT */
+
 
 /* PRODUKTER START */
 
@@ -727,9 +741,12 @@ bottom: -649px;
 
 /* PRODUKTER SLUT */
 
+
 /*TABLET*/
 
+
 /*@media screen and (min-width:768px)*/
+
 
 /*@media screen and (max-width: 768px) and (min-width: 0px)*/
 
@@ -769,8 +786,6 @@ bottom: -649px;
         margin-left: 10px;
         margin-top: -35px;
     }
-
-
     .mySlides {
         width: 100% !important;
     }
@@ -790,7 +805,6 @@ bottom: -649px;
     #filter button {
         width: 10vw;
     }
-
     .fb_logo,
     .ins_logo {
         width: 21%;
@@ -883,7 +897,6 @@ margin-top: 110px;
     .wpforms-field-required {
         width: 100%
     }
-
     .vrVideo {
         width: 60vw;
         height: 30vw;
@@ -1020,7 +1033,6 @@ height: 640px;
     #filter button {
         width: 10vw;
     }
-
     #navigation {
         justify-content: center;
         background-color: #a5c5b4;
@@ -1040,8 +1052,6 @@ height: 640px;
     .w3-display-left {
         margin-left: 32px;
     }
-
-
     .butikVideo {
         height: 500px;
         width: 40%;
@@ -1076,7 +1086,6 @@ height: 640px;
         font-size: 1.1em;
         margin-left: 17vw;
     }
-
     #navigation {
         justify-content: center;
         font-size: 1.2em;
@@ -1110,8 +1119,6 @@ height: 640px;
     .header {
         background-color: #a5c5b4;
     }
-
-
     .butikVideo {
         height: 500px;
         width: 40%;
