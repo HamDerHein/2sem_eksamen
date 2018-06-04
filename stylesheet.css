@@ -1211,6 +1211,10 @@ height: 640px;
 
         height: 450px;
     }
+
+    #farveskift {
+        margin-top: 34px;
+    }
 }
 
 
@@ -1324,8 +1328,8 @@ height: 640px;
 
     .butikVideo {
         height: 500px;
-        width: 40%;
-        margin-left: 30%;
+        width: 80%;
+        margin: 0 10%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
