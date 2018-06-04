@@ -1,4 +1,4 @@
-let sort;
+//let sort;
 let jasmin_gul;
 let hindbaer_rod;
 let lyserod;
@@ -19,7 +19,7 @@ async function farveskfit() {
     document.getElementById("kasse5").addEventListener("click", show_petroleumsBlaa);
     document.getElementById("kasse6").addEventListener("click", show_aquamarine);
     document.getElementById("kasse7").addEventListener("click", show_graa);
-    document.getElementById("kasse8").addEventListener("click", show_sort);
+//    document.getElementById("kasse8").addEventListener("click", show_sort);
     document.getElementById("kasse9").addEventListener("click", show_lysGraa);
     let mySvg = await fetch("img/finalSofabordFarveskift.svg");
     let svg = await mySvg.text();
@@ -28,7 +28,7 @@ async function farveskfit() {
     console.log("Hent SVG");
 
 
-    sort = document.querySelector("#sort");
+//    sort = document.querySelector("#sort");
     jasmin_gul = document.querySelector("#jasmin_gul");
     hindbaer_rod = document.querySelector("#hindbaer_rod");
     lyserod = document.querySelector("#lyserod");
@@ -37,7 +37,7 @@ async function farveskfit() {
     aquamarine = document.querySelector("#aquamarine");
     graa = document.querySelector("#graa");
     lys_graa = document.querySelector("#lys_graa");
-    sort = document.querySelector("#sort");
+//    sort = document.querySelector("#sort");
 }
 
 //----------------------------------------------
@@ -112,9 +112,9 @@ function show_lysGraa() {
 
 }
 
-function show_sort() {
-
-    hideAll();
-    sort.style.visibility = "visible";
-
-}
+//function show_sort() {
+//
+//    hideAll();
+//    sort.style.visibility = "visible";
+//
+//}
