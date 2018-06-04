@@ -36,7 +36,7 @@ p {
 
 h3 {
     font-family: 'Hind Vadodara', sans-serif, bold;
-    font-size: 1.8em,
+    font-size: 1.8em;
 }
 
 summary {
@@ -270,8 +270,7 @@ summary {
 }
 
 #omactive:hover {
-    background-color: rgba(30, 63, 89, 0.50;
-    )
+    background-color: rgba(30, 63, 89, 0.50);
     /* Styrer Desktopmenuknappernes hoverfarven*/
 }
 
@@ -745,8 +744,11 @@ textarea {
 
 #filter {
 
+
     display: flex;
     justify-content: space-evenly;
+
+
 }
 
 #filter button {
@@ -760,6 +762,7 @@ textarea {
     width: 22vw;
     height: 35px;
     padding-top: 0px;
+    margin: 0 -20px;
 }
 
 .sofabordeWrapper {
@@ -838,7 +841,7 @@ bottom: -649px;
         margin-top: -22px;
     }
 
-    #slidetekstboks {
+    .slidetekstboks {
         text-align: center;
         font-size: 1em !important;
     }
@@ -1009,7 +1012,7 @@ grid-gap: 10px;
         margin-bottom: 50px;
 
     }
-    #slidetekstboks {
+    .slidetekstboks {
         text-align: center;
         font-size: 1.2em !important;
     }
@@ -1231,7 +1234,7 @@ height: 640px;
         cursor: pointer;
 
     }
-    #slidetekstboks {
+    .slidetekstboks {
         text-align: center;
         font-size: 1.3em !important;
     }
@@ -1283,7 +1286,6 @@ height: 640px;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 2em;
-        border-bottom:
     }
 
     .aabningstider {
